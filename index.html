@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RBE1RJWP2S"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-RBE1RJWP2S');
+    </script>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Fabricio Rassier | Dev</title>
+    <meta name="description"
+        content="Portfólio de Fabricio Rassier. Desenvolvedor Full Stack em Porto Alegre especializado em Flutter, Next.js, React e soluções mobile. Transformando ideias em software." />
+    <meta name="keywords"
+        content="Fabricio Rassier, Desenvolvedor Web, Flutter Developer, Programador Porto Alegre, React, Next.js, Criação de Sites, Aplicativos Mobile" />
+    <meta name="author" content="Fabricio Rassier" />
+    <meta name="robots" content="index, follow" />
+
+    <link rel="canonical" href="https://fabriciorassier.com.br/" />
+
+    <meta property="og:title" content="Fabricio Rassier | Desenvolvedor Web & Mobile" />
+    <meta property="og:description"
+        content="Confira meu portfólio, projetos e habilidades em desenvolvimento de software." />
+    <meta property="og:image" content="https://fabriciorassier.com.br/imagens/fabricio.jpg" />
+    <meta property="og:url" content="https://fabriciorassier.com.br/" />
+    <meta property="og:type" content="website" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Fabricio Rassier">
+
+    <meta name="theme-color" content="#111827" />
+
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="/android-chrome-192x192.png" sizes="192x192" />
+    <link rel="icon" type="image/png" href="/android-chrome-512x512.png" sizes="512x512" />
+    <link rel="manifest" href="/site.webmanifest">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js"></script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+            background-color: #111827;
+            color: #e5e7eb;
+        }
+
+        .gradient-text {
+            background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .skill-badge {
+            transition: all 0.3s ease;
+        }
+
+        .skill-badge:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
+        }
+
+        #hero {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 10;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3);
+        }
+
+        .timeline-item:not(:last-child)::after {
+            content: '';
+            position: absolute;
+            left: 11px;
+            top: 24px;
+            height: calc(100% - 24px);
+            width: 2px;
+            background: #374151;
+        }
+
+        /* Ajustes de Tema Escuro */
+        .bg-white,
+        .bg-gray-50,
+        .bg-blue-50,
+        .bg-purple-50,
+        .bg-gradient-to-br.from-blue-50.to-purple-50 {
+            background-color: #1f2937 !important;
+            color: #e5e7eb !important;
+        }
+
+        .bg-gray-100,
+        .bg-blue-100,
+        .bg-purple-100,
+        .bg-green-100,
+        .bg-yellow-100,
+        .bg-red-100,
+        .bg-indigo-100 {
+            background-color: #374151 !important;
+        }
+
+        .text-gray-600,
+        .text-gray-700,
+        .text-gray-800,
+        .text-gray-900 {
+            color: #d1d5db !important;
+        }
+
+        .text-blue-800,
+        .text-purple-800,
+        .text-green-800,
+        .text-yellow-800,
+        .text-red-800,
+        .text-indigo-800 {
+            color: #e5e7eb !important;
+        }
+
+        .border-gray-200,
+        .border-gray-300 {
+            border-color: #374151 !important;
+        }
+
+        .bg-gray-200 {
+            background-color: #4b5563 !important;
+        }
+
+        input,
+        textarea {
+            background-color: #374151 !important;
+            color: #e5e7eb !important;
+            border-color: #4b5563 !important;
+        }
+
+        input::placeholder,
+        textarea::placeholder {
+            color: #9ca3af !important;
+        }
+    </style>
+</head>
+
+<body class="text-gray-200">
+    <section id="hero" class="min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8">
+        <div class="absolute inset-0 bg-gradient-to-br from-gray-900 to-gray-800 opacity-80"></div>
+        <div class="hero-content text-center max-w-4xl mx-auto py-20">
+            <div data-aos="fade-up" class="mb-6">
+                <div
+                    class="w-80 h-80 mx-auto rounded-full overflow-hidden border-4 border-gray-700 shadow-lg relative z-10">
+                    <img src="imagens/fabricio.jpg" alt="Foto de Fabricio Rassier"
+                        class="w-full h-full object-cover object-center" loading="eager">
+                </div>
+            </div>
+            <h1 data-aos="fade-up" data-aos-delay="100" class="text-4xl md:text-5xl font-bold mb-4">Fabricio Rassier
+                Vargas</h1>
+            <h2 data-aos="fade-up" data-aos-delay="200" class="text-2xl md:text-3xl font-semibold mb-6 gradient-text">
+                Desenvolvedor Web & Mobile</h2>
+            <p data-aos="fade-up" data-aos-delay="300" class="text-lg md:text-xl mb-8 max-w-2xl mx-auto">
+                Criando soluções digitais inovadoras com Flutter, React e Next.js. Transformando ideias em realidade
+                através de código limpo e eficiente.
+            </p>
+            <div data-aos="fade-up" data-aos-delay="400" class="flex flex-wrap justify-center gap-4 mb-12">
+                <a href="#contact"
+                    class="px-6 py-3 bg-blue-600 text-white font-medium rounded-lg shadow-md hover:bg-blue-700 transition duration-300 flex items-center">
+                    <i data-feather="mail" class="mr-2"></i> Contato
+                </a>
+                <a href="https://drive.google.com/file/d/1LPyQdDh7i96grnqfwiRy34lBI0S4ghHH/view?usp=drive_link"
+                    target="_blank" rel="noopener noreferrer"
+                    class="px-6 py-3 border border-blue-600 text-blue-400 font-medium rounded-lg hover:bg-gray-800 transition duration-300 flex items-center">
+                    <i data-feather="file-text" class="mr-2"></i> Currículo
+                </a>
+            </div>
+            <div data-aos="fade-up" data-aos-delay="500" class="flex justify-center space-x-6">
+                <a href="https://github.com/fabricio-rv" target="_blank" rel="noopener noreferrer"
+                    class="text-gray-400 hover:text-blue-400 transition duration-300" aria-label="GitHub">
+                    <i data-feather="github" class="w-6 h-6"></i>
+                </a>
+                <a href="https://linkedin.com/in/fabriciorassier" target="_blank" rel="noopener noreferrer"
+                    class="text-gray-400 hover:text-blue-400 transition duration-300" aria-label="LinkedIn">
+                    <i data-feather="linkedin" class="w-6 h-6"></i>
+                </a>
+                <a href="mailto:fabriciorassier@gmail.com"
+                    class="text-gray-400 hover:text-blue-400 transition duration-300" aria-label="Email">
+                    <i data-feather="mail" class="w-6 h-6"></i>
+                </a>
+            </div>
+        </div>
+        <div class="absolute bottom-10 left-0 right-0 flex justify-center z-10">
+            <a href="#about" class="animate-bounce text-gray-500 hover:text-blue-400 transition duration-300"
+                aria-label="Rolar para baixo">
+                <i data-feather="chevron-down" class="w-8 h-8"></i>
+            </a>
+        </div>
+    </section>
+
+    <section id="about" class="py-20 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 data-aos="fade-up" class="text-3xl md:text-4xl font-bold mb-4">Sobre Mim</h2>
+                <div data-aos="fade-up" data-aos-delay="100"
+                    class="w-20 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto"></div>
+            </div>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div data-aos="fade-right" class="order-2 md:order-1">
+                    <h3 class="text-2xl font-semibold mb-6">Olá, eu sou o Fabricio! 👋</h3>
+                    <p class="mb-4">
+                        Sou desenvolvedor web e mobile, com foco em Flutter/Dart, Desenvolvimento Web Responsivo,
+                        Next.js, TypeScript, React, HTML, CSS e Python, além de conhecimentos adicionais em
+                        JavaScript, Java, Cibersegurança e SQL.
+                    </p>
+                    <p class="mb-4">
+                        Tenho formação técnica em Desenvolvimento de Sistemas (Senac Tech) e atualmente curso Ciência da
+                        Computação (UniRitter), onde aprofundo meus conhecimentos em Java, programação orientada a
+                        objetos, modelagem de software e boas práticas de desenvolvimento.
+                    </p>
+                    <p class="mb-6">
+                        Atuei em projetos freelancer e acadêmicos, como sistemas web completos e aplicativos móveis,
+                        incluindo soluções para empresas e clientes finais. Meu objetivo é colaborar em projetos onde
+                        eu possa aprender continuamente e entregar resultados com qualidade.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-blue-500/20 text-blue-300 rounded-full text-sm">Flutter</span>
+                        <span class="px-3 py-1 bg-purple-500/20 text-purple-300 rounded-full text-sm">Dart</span>
+                        <span class="px-3 py-1 bg-red-500/20 text-red-300 rounded-full text-sm">HTML</span>
+                        <span class="px-3 py-1 bg-yellow-500/20 text-yellow-300 rounded-full text-sm">JavaScript</span>
+                        <span class="px-3 py-1 bg-indigo-500/20 text-indigo-300 rounded-full text-sm">TailwindCSS</span>
+                    </div>
+                </div>
+
+                <div data-aos="fade-left" data-aos-delay="200" class="order-1 md:order-2">
+                    <div class="bg-gradient-to-br from-blue-500/10 to-purple-500/10 p-1 rounded-xl shadow-lg">
+                        <div class="bg-gray-800 p-6 rounded-lg">
+                            <div class="grid grid-cols-2 gap-4">
+                                <div class="p-4 bg-gray-700 rounded-lg text-center">
+                                    <i data-feather="award" class="w-8 h-8 text-blue-400 mx-auto mb-2"></i>
+                                    <h4 class="font-semibold">Experiência</h4>
+                                    <p class="text-sm">+1 anos</p>
+                                </div>
+                                <div class="p-4 bg-gray-700 rounded-lg text-center">
+                                    <i data-feather="briefcase" class="w-8 h-8 text-purple-400 mx-auto mb-2"></i>
+                                    <h4 class="font-semibold">Projetos</h4>
+                                    <p class="text-sm">5+ completos</p>
+                                </div>
+                                <div class="p-4 bg-gray-700 rounded-lg text-center">
+                                    <i data-feather="code" class="w-8 h-8 text-blue-400 mx-auto mb-2"></i>
+                                    <h4 class="font-semibold">Tecnologias</h4>
+                                    <p class="text-sm">5+ dominadas</p>
+                                </div>
+                                <div class="p-4 bg-gray-700 rounded-lg text-center">
+                                    <i data-feather="book" class="w-8 h-8 text-purple-400 mx-auto mb-2"></i>
+                                    <h4 class="font-semibold">Formação</h4>
+                                    <p class="text-sm">Técnico + Graduação</p>
+                                </div>
+                            </div>
+                            <div class="mt-6 pt-6 border-t border-gray-700">
+                                <div class="flex items-center mb-3">
+                                    <i data-feather="map-pin" class="w-5 h-5 text-gray-400 mr-2"></i>
+                                    <span>Porto Alegre, RS - Brasil</span>
+                                </div>
+                                <div class="flex items-center mb-3">
+                                    <i data-feather="mail" class="w-5 h-5 text-gray-400 mr-2"></i>
+                                    <span>fabriciorassier@gmail.com</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <i data-feather="phone" class="w-5 h-5 text-gray-400 mr-2"></i>
+                                    <span>(51) 99662-8049</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="py-20 px-4 sm:px-6 lg:px-8 bg-gray-900">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 data-aos="fade-up" class="text-3xl md:text-4xl font-bold mb-4">Minhas Habilidades</h2>
+                <div data-aos="fade-up" data-aos-delay="100"
+                    class="w-20 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto"></div>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div data-aos="fade-up">
+                    <h3 class="text-xl font-semibold mb-6 flex items-center">
+                        <i data-feather="code" class="w-6 h-6 mr-2 text-blue-400"></i> Principais Tecnologias
+                    </h3>
+                    <div class="space-y-4">
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="text-sm font-medium">Flutter/Dart</span>
+                                <span class="text-sm font-medium">90%</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-2.5">
+                                <div class="bg-blue-600 h-2.5 rounded-full" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="text-sm font-medium">HTML</span>
+                                <span class="text-sm font-medium">85%</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-2.5">
+                                <div class="bg-purple-600 h-2.5 rounded-full" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="text-sm font-medium">TailwindCSS</span>
+                                <span class="text-sm font-medium">80%</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-2.5">
+                                <div class="bg-blue-600 h-2.5 rounded-full" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="text-sm font-medium">JavaScript</span>
+                                <span class="text-sm font-medium">75%</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-2.5">
+                                <div class="bg-purple-600 h-2.5 rounded-full" style="width: 75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="100">
+                    <h3 class="text-xl font-semibold mb-6 flex items-center">
+                        <i data-feather="tool" class="w-6 h-6 mr-2 text-purple-400"></i> Outras Habilidades
+                    </h3>
+                    <div class="flex flex-wrap gap-3">
+                        <div class="skill-badge px-4 py-2 bg-gray-800 shadow-sm rounded-lg flex items-center">
+                            <i data-feather="database" class="w-4 h-4 mr-2 text-blue-400"></i>
+                            <span>SQL</span>
+                        </div>
+                        <div class="skill-badge px-4 py-2 bg-gray-800 shadow-sm rounded-lg flex items-center">
+                            <i data-feather="shield" class="w-4 h-4 mr-2 text-green-400"></i>
+                            <span>Cibersegurança</span>
+                        </div>
+                        <div class="skill-badge px-4 py-2 bg-gray-800 shadow-sm rounded-lg flex items-center">
+                            <i data-feather="cpu" class="w-4 h-4 mr-2 text-yellow-400"></i>
+                            <span>Java</span>
+                        </div>
+                        <div class="skill-badge px-4 py-2 bg-gray-800 shadow-sm rounded-lg flex items-center">
+                            <i data-feather="code" class="w-4 h-4 mr-2 text-blue-300"></i>
+                            <span>TypeScript</span>
+                        </div>
+                        <div class="skill-badge px-4 py-2 bg-gray-800 shadow-sm rounded-lg flex items-center">
+                            <i data-feather="terminal" class="w-4 h-4 mr-2 text-indigo-400"></i>
+                            <span>Python</span>
+                        </div>
+                        <div class="skill-badge px-4 py-2 bg-gray-800 shadow-sm rounded-lg flex items-center">
+                            <i data-feather="layers" class="w-4 h-4 mr-2 text-gray-400"></i>
+                            <span>React</span>
+                        </div>
+                        <div class="skill-badge px-4 py-2 bg-gray-800 shadow-sm rounded-lg flex items-center">
+                            <i data-feather="zap" class="w-4 h-4 mr-2 text-white"></i>
+                            <span>Next.js</span>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-semibold mt-8 mb-4 flex items-center">
+                        <i data-feather="globe" class="w-6 h-6 mr-2 text-blue-400"></i> Idiomas
+                    </h3>
+                    <div class="space-y-3">
+                        <div class="flex items-center">
+                            <span class="w-24">Português</span>
+                            <div class="flex-1 ml-2">
+                                <div class="h-2 bg-gray-700 rounded-full">
+                                    <div class="h-2 bg-blue-600 rounded-full" style="width: 100%"></div>
+                                </div>
+                            </div>
+                            <span class="ml-2 text-sm text-gray-400">Nativo</span>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="w-24">Inglês</span>
+                            <div class="flex-1 ml-2">
+                                <div class="h-2 bg-gray-700 rounded-full">
+                                    <div class="h-2 bg-blue-600 rounded-full" style="width: 20%"></div>
+                                </div>
+                            </div>
+                            <span class="ml-2 text-sm text-gray-400">Básico (A1-A2)</span>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="w-24">Espanhol</span>
+                            <div class="flex-1 ml-2">
+                                <div class="h-2 bg-gray-700 rounded-full">
+                                    <div class="h-2 bg-blue-600 rounded-full" style="width: 20%"></div>
+                                </div>
+                            </div>
+                            <span class="ml-2 text-sm text-gray-400">Básico (A1-A2)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="timeline" class="py-20 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 data-aos="fade-up" class="text-3xl md:text-4xl font-bold mb-4">Trajetória</h2>
+                <div data-aos="fade-up" data-aos-delay="100"
+                    class="w-20 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto"></div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12">
+
+                <div>
+                    <h3 data-aos="fade-up" class="text-2xl font-semibold mb-8 flex items-center">
+                        <i data-feather="book" class="w-6 h-6 mr-3 text-purple-400"></i> Educação
+                    </h3>
+                    <div class="space-y-8 relative">
+
+                        <div data-aos="fade-up" data-aos-delay="200" class="timeline-item relative pl-8">
+                            <div
+                                class="absolute left-0 top-0 w-6 h-6 rounded-full bg-purple-600 border-4 border-gray-800 shadow-md">
+                            </div>
+                            <div class="bg-gray-800 p-6 rounded-lg shadow-sm hover:shadow-md transition duration-300">
+                                <div class="flex justify-between items-start mb-2">
+                                    <h4 class="text-lg font-semibold">Técnico em Desenvolvimento de Sistemas</h4>
+                                    <span class="text-sm bg-purple-500/20 text-purple-300 px-2 py-1 rounded">2023 -
+                                        2025</span>
+                                </div>
+                                <p class="mb-3">Senac Tech</p>
+                                <p class="text-sm">
+                                    Formação técnica com foco em desenvolvimento de sistemas, programação web e mobile,
+                                    banco de dados e análise de sistemas.
+                                </p>
+                            </div>
+                        </div>
+                        <div data-aos="fade-up" data-aos-delay="100" class="timeline-item relative pl-8">
+                            <div
+                                class="absolute left-0 top-0 w-6 h-6 rounded-full bg-purple-600 border-4 border-gray-800 shadow-md">
+                            </div>
+                            <div class="bg-gray-800 p-6 rounded-lg shadow-sm hover:shadow-md transition duration-300">
+                                <div class="flex justify-between items-start mb-2">
+                                    <h4 class="text-lg font-semibold">Bacharelado em Ciência da Computação</h4>
+                                    <span class="text-sm bg-purple-500/20 text-purple-300 px-2 py-1 rounded">2025 -
+                                        2028</span>
+                                </div>
+                                <p class="mb-3">UniRitter</p>
+                                <p class="text-sm">
+                                    Aprofundando conhecimentos em Java, Programação Orientada a Objetos,
+                                    Modelagem de Software e Boas Práticas de Desenvolvimento, além de
+                                    Sistemas Computacionais de Segurança, Ambientes Computacionais e Conectividade.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 data-aos="fade-up" data-aos-delay="300" class="text-2xl font-semibold mb-8 flex items-center">
+                        <i data-feather="award" class="w-6 h-6 mr-3 text-blue-400"></i> Certificações
+                    </h3>
+                    <div class="space-y-4">
+                        <div data-aos="fade-up" data-aos-delay="500"
+                            class="bg-gray-800 p-4 rounded-lg shadow-sm hover:shadow-md transition duration-300">
+                            <h4 class="font-medium">Modelagem de Software</h4>
+                            <p class="text-sm">UniRitter (2025)</p>
+                        </div>
+                        <div data-aos="fade-up" data-aos-delay="600"
+                            class="bg-gray-800 p-4 rounded-lg shadow-sm hover:shadow-md transition duration-300">
+                            <h4 class="font-medium">Programação de Soluções Computacionais</h4>
+                            <p class="text-sm">UniRitter (2025)</p>
+                        </div>
+                        <div data-aos="fade-up" data-aos-delay="600"
+                            class="bg-gray-800 p-4 rounded-lg shadow-sm hover:shadow-md transition duration-300">
+                            <h4 class="font-medium">Sistemas computacionais e segurança</h4>
+                            <p class="text-sm">UniRitter (2025)</p>
+                        </div>
+                        <div data-aos="fade-up" data-aos-delay="600"
+                            class="bg-gray-800 p-4 rounded-lg shadow-sm hover:shadow-md transition duration-300">
+                            <h4 class="font-medium">Ambientes computacionais e conectividade</h4>
+                            <p class="text-sm">UniRitter (2025)</p>
+                        </div>
+                        <div data-aos="fade-up" data-aos-delay="400"
+                            class="bg-gray-800 p-4 rounded-lg shadow-sm hover:shadow-md transition duration-300">
+                            <h4 class="font-medium">Introduction to Cybersecurity</h4>
+                            <p class="text-sm">Cisco Networking Academy (2025)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-16 flex justify-center">
+                <div class="w-full md:w-2/3">
+                    <h3 data-aos="fade-up" class="text-2xl font-semibold mb-8 flex items-center justify-center">
+                        <i data-feather="briefcase" class="w-6 h-6 mr-3 text-blue-400"></i> Experiência
+                    </h3>
+                    <div class="space-y-8 relative">
+                        <div data-aos="fade-up" data-aos-delay="100" class="timeline-item relative pl-8">
+                            <div
+                                class="absolute left-0 top-0 w-6 h-6 rounded-full bg-blue-600 border-4 border-gray-800 shadow-md">
+                            </div>
+                            <div class="bg-gray-800 p-6 rounded-lg shadow-sm hover:shadow-md transition duration-300">
+                                <div class="flex justify-between items-start mb-2">
+                                    <h4 class="text-lg font-semibold">Desenvolvedor Web/Mobile Freelancer</h4>
+                                    <span class="text-sm bg-blue-500/20 text-blue-300 px-2 py-1 rounded">2025</span>
+                                </div>
+                                <p class="mb-3">
+                                    Desenvolvimento de landing page institucional para empresa de segurança
+                                    (protepac.com.br).
+                                    Criação de aplicativo mobile em Flutter para gestão de clientes, orçamentos e
+                                    chamados técnicos.
+                                </p>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="px-2 py-1 bg-blue-500/20 text-blue-300 text-xs rounded">Flutter</span>
+                                    <span class="px-2 py-1 bg-purple-500/20 text-purple-300 text-xs rounded">Dart</span>
+                                    <span class="px-2 py-1 bg-green-500/20 text-green-300 text-xs rounded">HTML</span>
+                                    <span
+                                        class="px-2 py-1 bg-yellow-500/20 text-yellow-300 text-xs rounded">TailwindCSS</span>
+                                    <span
+                                        class="px-2 py-1 bg-purple-500/20 text-purple-300 text-xs rounded">JavaScript</span>
+                                </div>
+                                <div class="mt-4">
+                                    <a href="https://github.com/fabricio-rv/app_seguranca" target="_blank"
+                                        rel="noopener noreferrer"
+                                        class="text-sm text-blue-400 hover:underline flex items-center">
+                                        <i data-feather="github" class="w-4 h-4 mr-1"></i> App Segurança
+                                    </a>
+                                    <a href="https://github.com/fabricio-rv/site_seguranca" target="_blank"
+                                        rel="noopener noreferrer"
+                                        class="text-sm text-blue-400 hover:underline flex items-center mt-1">
+                                        <i data-feather="github" class="w-4 h-4 mr-1"></i> Site Segurança
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-aos="fade-up" data-aos-delay="50" class="timeline-item relative pl-8">
+                            <div
+                                class="absolute left-0 top-0 w-6 h-6 rounded-full bg-green-600 border-4 border-gray-800 shadow-md">
+                            </div>
+                            <div class="bg-gray-800 p-6 rounded-lg shadow-sm hover:shadow-md transition duration-300">
+                                <div class="flex justify-between items-start mb-2">
+                                    <h4 class="text-lg font-semibold">App Hub de Futebol</h4>
+                                    <span class="text-sm bg-green-500/20 text-green-300 px-2 py-1 rounded">Em
+                                        Andamento</span>
+                                </div>
+                                <p class="mb-3">Projeto Pessoal</p>
+                                <p class="text-sm">
+                                    Desenvolvimento de um ecossistema mobile completo para amantes de futebol. Uma
+                                    evolução do conceito acadêmico iFut, integrando matchmaking, estatísticas e gestão
+                                    de ligas.
+                                </p>
+                                <div class="flex flex-wrap gap-2 mt-3">
+                                    <span class="px-2 py-1 bg-blue-500/20 text-blue-300 text-xs rounded">Flutter</span>
+                                    <span class="px-2 py-1 bg-purple-500/20 text-purple-300 text-xs rounded">Dart</span>
+                                    <span
+                                        class="px-2 py-1 bg-green-500/20 text-green-300 text-xs rounded">Firebase</span>
+                                </div>
+                                <div class="mt-4">
+                                    <a href="https://github.com/fabricio-rv/ifut_app" target="_blank"
+                                        rel="noopener noreferrer"
+                                        class="text-sm text-blue-400 hover:underline flex items-center">
+                                        <i data-feather="github" class="w-4 h-4 mr-1"></i> App fut
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="projects" class="py-20 px-4 sm:px-6 lg:px-8 bg-gray-900">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 data-aos="fade-up" class="text-3xl md:text-4xl font-bold mb-4">Projetos Realizados
+                </h2>
+                <div data-aos="fade-up" data-aos-delay="100"
+                    class="w-20 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto"></div>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div data-aos="fade-up" data-aos-delay="100"
+                    class="project-card bg-gray-800 rounded-xl overflow-hidden shadow-md hover:shadow-xl transition duration-300">
+                    <div class="h-48 overflow-hidden">
+                        <img src="imagens/protepac_app.png" alt="App Segurança - Flutter"
+                            class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">App Segurança</h3>
+                        <p class="mb-4">Aplicativo mobile em Flutter para gestão de clientes, orçamentos e chamados
+                            técnicos.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 bg-blue-500/20 text-blue-300 text-xs rounded">Flutter</span>
+                            <span class="px-2 py-1 bg-purple-500/20 text-purple-300 text-xs rounded">Dart</span>
+                            <span class="px-2 py-1 bg-green-500/20 text-green-300 text-xs rounded">Firebase</span>
+                        </div>
+                        <a href="https://github.com/fabricio-rv/app_seguranca" target="_blank" rel="noopener noreferrer"
+                            class="text-blue-400 hover:underline flex items-center text-sm">
+                            <i data-feather="github" class="w-4 h-4 mr-1"></i> Ver no GitHub
+                        </a>
+                    </div>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="200"
+                    class="project-card bg-gray-800 rounded-xl overflow-hidden shadow-md hover:shadow-xl transition duration-300">
+                    <div class="h-48 overflow-hidden">
+                        <img src="imagens/protepac_site.png" alt="Site Segurança - Landing Page"
+                            class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Site Segurança</h3>
+                        <p class="mb-4">Landing page institucional para empresa de segurança (protepac.com.br).</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 bg-blue-500/20 text-blue-300 text-xs rounded">JavaScript</span>
+                            <span class="px-2 py-1 bg-yellow-500/20 text-yellow-300 text-xs rounded">HTML</span>
+                            <span class="px-2 py-1 bg-indigo-500/20 text-indigo-300 text-xs rounded">TailwindCSS</span>
+                        </div>
+                        <a href="https://github.com/fabricio-rv/site_seguranca" target="_blank"
+                            rel="noopener noreferrer" class="text-blue-400 hover:underline flex items-center text-sm">
+                            <i data-feather="github" class="w-4 h-4 mr-1"></i> Ver no GitHub
+                        </a>
+                    </div>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="300"
+                    class="project-card bg-gray-800 rounded-xl overflow-hidden shadow-md hover:shadow-xl transition duration-300">
+                    <div class="h-48 overflow-hidden">
+                        <img src="imagens/ifut.png" alt="Sistema iFut" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">iFut</h3>
+                        <p class="mb-4">Sistema Web de Matchmaking para Futebol desenvolvido no Senac Tech.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 bg-blue-500/20 text-blue-300 text-xs rounded">PHP</span>
+                            <span class="px-2 py-1 bg-green-500/20 text-green-300 text-xs rounded">MySQL</span>
+                            <span class="px-2 py-1 bg-yellow-500/20 text-yellow-300 text-xs rounded">JavaScript</span>
+                            <span class="px-2 py-1 bg-purple-500/20 text-purple-300 text-xs rounded">HTML</span>
+                            <span class="px-2 py-1 bg-indigo-500/20 text-indigo-300 text-xs rounded">TailwindCSS</span>
+                        </div>
+                        <span class="text-gray-500 text-sm">Projeto acadêmico</span>
+                        <a href="https://github.com/fabricio-rv/ifut" target="_blank" rel="noopener noreferrer"
+                            class="text-blue-400 hover:underline flex items-center text-sm">
+                            <i data-feather="github" class="w-4 h-4 mr-1"></i> Ver no GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <div data-aos="fade-up" data-aos-delay="200"
+                    class="project-card bg-gray-800 rounded-xl overflow-hidden shadow-md hover:shadow-xl transition duration-300">
+                    <div class="h-48 overflow-hidden">
+                        <img src="imagens/fabricio2.jpg" alt="Portfólio Fabricio Rassier"
+                            class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Portfólio Pessoal</h3>
+                        <p class="mb-4">Site desenvolvido para apresentar minha trajetória, projetos e habilidades
+                            profissionais.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 bg-blue-500/20 text-blue-300 text-xs rounded">HTML</span>
+                            <span class="px-2 py-1 bg-indigo-500/20 text-indigo-300 text-xs rounded">TailwindCSS</span>
+                            <span class="px-2 py-1 bg-yellow-500/20 text-yellow-300 text-xs rounded">JavaScript</span>
+                        </div>
+                        <a href="https://github.com/fabricio-rv/fabricio_rassier" target="_blank"
+                            rel="noopener noreferrer" class="text-blue-400 hover:underline flex items-center text-sm">
+                            <i data-feather="github" class="w-4 h-4 mr-1"></i> Ver no GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <div data-aos="fade-up" data-aos-delay="300"
+                    class="project-card bg-gray-800 rounded-xl overflow-hidden shadow-md hover:shadow-xl transition duration-300">
+                    <div class="h-48 overflow-hidden">
+                        <img src="imagens/messi.png" alt="Site Lionel Messi" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Homenagem ao Lionel Messi</h3>
+                        <p class="mb-4">Página web completa com estatísticas, história e conquistas da lenda do futebol.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 bg-blue-500/20 text-blue-300 text-xs rounded">HTML</span>
+                            <span class="px-2 py-1 bg-pink-500/20 text-pink-300 text-xs rounded">CSS</span>
+                            <span class="px-2 py-1 bg-yellow-500/20 text-yellow-300 text-xs rounded">JavaScript</span>
+                        </div>
+                        <a href="https://github.com/fabricio-rv/messi" target="_blank" rel="noopener noreferrer"
+                            class="text-blue-400 hover:underline flex items-center text-sm">
+                            <i data-feather="github" class="w-4 h-4 mr-1"></i> Ver no GitHub
+                        </a>
+                    </div>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="100"
+                    class="project-card bg-gray-800 rounded-xl overflow-hidden shadow-md hover:shadow-xl transition duration-300">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="imagens/fut.png" alt="App Hub Futebol" class="w-full h-full object-cover">
+                        <div class="absolute top-2 right-2 bg-green-600 text-white text-xs px-2 py-1 rounded">Em
+                            Andamento</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">App Futebol - Hub Esportivo</h3>
+                        <p class="mb-4">Ecossistema mobile completo integrando gestão de ligas, estatísticas e
+                            comunidade. Uma mistura de grandes sucessos do esporte.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 bg-blue-500/20 text-blue-300 text-xs rounded">Flutter</span>
+                            <span class="px-2 py-1 bg-purple-500/20 text-purple-300 text-xs rounded">Dart</span>
+                            <span class="px-2 py-1 bg-green-500/20 text-green-300 text-xs rounded">Firebase</span>
+                        </div>
+                        <a href="https://github.com/fabricio-rv/ifut_app" target="_blank" rel="noopener noreferrer"
+                            class="text-blue-400 hover:underline flex items-center text-sm">
+                            <i data-feather="github" class="w-4 h-4 mr-1"></i> Ver no GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-20 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 data-aos="fade-up" class="text-3xl md:text-4xl font-bold mb-4">Vamos Conversar</h2>
+                <p data-aos="fade-up" data-aos-delay="100" class="text-xl max-w-2xl mx-auto">
+                    Estou disponível para oportunidades e colaborações. Entre em contato!
+                </p>
+                <div data-aos="fade-up" data-aos-delay="200"
+                    class="w-20 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto mt-4"></div>
+            </div>
+            <div class="grid md:grid-cols-2 gap-12">
+                <div data-aos="fade-right">
+                    <form action="https://formspree.io/f/xwvkenny" method="POST" class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-sm font-medium mb-1">Nome</label>
+                            <input type="text" id="name" name="name" required
+                                class="w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition duration-300"
+                                placeholder="Seu nome">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium mb-1">Email</label>
+                            <input type="email" id="email" name="email" required
+                                class="w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition duration-300"
+                                placeholder="seu@email.com">
+                        </div>
+                        <div>
+                            <label for="subject" class="block text-sm font-medium mb-1">Assunto</label>
+                            <input type="text" id="subject" name="subject" required
+                                class="w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition duration-300"
+                                placeholder="Sobre o que deseja falar?">
+                        </div>
+                        <div>
+                            <label for="message" class="block text-sm font-medium mb-1">Mensagem</label>
+                            <textarea id="message" name="message" rows="5" required
+                                class="w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition duration-300"
+                                placeholder="Digite sua mensagem aqui..."></textarea>
+                        </div>
+                        <button type="submit"
+                            class="w-full px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-medium rounded-lg shadow-md hover:from-blue-700 hover:to-purple-700 transition duration-300 flex items-center justify-center">
+                            <i data-feather="send" class="w-5 h-5 mr-2"></i> Enviar Mensagem
+                        </button>
+                    </form>
+                </div>
+                <div data-aos="fade-left" data-aos-delay="200">
+                    <div class="bg-gradient-to-br from-blue-500/10 to-purple-500/10 p-8 rounded-xl h-full">
+                        <h3 class="text-xl font-semibold mb-6 flex items-center">
+                            <i data-feather="info" class="w-6 h-6 mr-2 text-blue-400"></i> Informações de Contato
+                        </h3>
+                        <div class="space-y-5">
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 mt-1">
+                                    <i data-feather="mail" class="w-5 h-5 text-blue-400"></i>
+                                </div>
+                                <div class="ml-4">
+                                    <h4 class="text-sm font-medium">Email</h4>
+                                    <a href="mailto:fabriciorassier@gmail.com"
+                                        class="text-blue-400 hover:underline">fabriciorassier@gmail.com</a>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 mt-1">
+                                    <i data-feather="phone" class="w-5 h-5 text-blue-400"></i>
+                                </div>
+                                <div class="ml-4">
+                                    <h4 class="text-sm font-medium">Telefone</h4>
+                                    <a href="tel:+5551996628049" class="text-blue-400 hover:underline">(51)
+                                        99662-8049</a>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 mt-1">
+                                    <i data-feather="map-pin" class="w-5 h-5 text-blue-400"></i>
+                                </div>
+                                <div class="ml-4">
+                                    <h4 class="text-sm font-medium">Localização</h4>
+                                    <p>Porto Alegre, RS - Brasil</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 mt-1">
+                                    <i data-feather="file-text" class="w-5 h-5 text-blue-400"></i>
+                                </div>
+                                <div class="ml-4">
+                                    <h4 class="text-sm font-medium">Currículo</h4>
+                                    <a href="https://drive.google.com/file/d/1LPyQdDh7i96grnqfwiRy34lBI0S4ghHH/view?usp=drive_link"
+                                        target="_blank" rel="noopener noreferrer"
+                                        class="text-blue-400 hover:underline flex items-center">
+                                        Visualizar PDF <i data-feather="external-link" class="w-4 h-4 ml-1"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-8 pt-6 border-t border-gray-700">
+                            <h3 class="text-xl font-semibold mb-6 flex items-center">
+                                <i data-feather="share-2" class="w-6 h-6 mr-2 text-purple-400"></i> Redes Sociais
+                            </h3>
+                            <div class="flex space-x-4">
+                                <a href="https://linkedin.com/in/fabriciorassier" target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="w-10 h-10 rounded-full bg-blue-500/20 flex items-center justify-center text-blue-400 hover:bg-blue-500/30 transition duration-300"
+                                    aria-label="LinkedIn">
+                                    <i data-feather="linkedin" class="w-5 h-5"></i>
+                                </a>
+                                <a href="https://github.com/fabricio-rv" target="_blank" rel="noopener noreferrer"
+                                    class="w-10 h-10 rounded-full bg-gray-700 flex items-center justify-center text-gray-300 hover:bg-gray-600 transition duration-300"
+                                    aria-label="GitHub">
+                                    <i data-feather="github" class="w-5 h-5"></i>
+                                </a>
+                                <a href="mailto:fabriciorassier@gmail.com"
+                                    class="w-10 h-10 rounded-full bg-red-500/20 flex items-center justify-center text-red-400 hover:bg-red-500/30 transition duration-300"
+                                    aria-label="Email">
+                                    <i data-feather="mail" class="w-5 h-5"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-950 text-gray-300 py-12 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Fabricio Rassier</h3>
+                    <p>
+                        Desenvolvedor Web & Mobile focado em criar soluções digitais inovadoras e eficientes.
+                    </p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Links Rápidos</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#about" class="hover:text-white transition duration-300">Sobre</a></li>
+                        <li><a href="#skills" class="hover:text-white transition duration-300">Habilidades</a></li>
+                        <li><a href="#timeline" class="hover:text-white transition duration-300">Trajetória</a></li>
+                        <li><a href="#projects" class="hover:text-white transition duration-300">Projetos</a></li>
+                        <li><a href="#contact" class="hover:text-white transition duration-300">Contato</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Contato</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-center">
+                            <i data-feather="mail" class="w-4 h-4 mr-2"></i>
+                            <span>fabriciorassier@gmail.com</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i data-feather="phone" class="w-4 h-4 mr-2"></i>
+                            <span>(51) 99662-8049</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i data-feather="map-pin" class="w-4 h-4 mr-2"></i>
+                            <span>Porto Alegre, RS - Brasil</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-sm mb-4 md:mb-0">
+                    &copy; 2025 Fabricio Rassier. Todos os direitos reservados.
+                </p>
+                <div class="flex space-x-6">
+                    <a href="https://github.com/fabricio-rv" target="_blank" rel="noopener noreferrer"
+                        class="hover:text-white transition duration-300" aria-label="GitHub">
+                        <i data-feather="github" class="w-5 h-5"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/fabriciorassier" target="_blank" rel="noopener noreferrer"
+                        class="hover:text-white transition duration-300" aria-label="LinkedIn">
+                        <i data-feather="linkedin" class="w-5 h-5"></i>
+                    </a>
+                    <a href="mailto:fabriciorassier@gmail.com" class="hover:text-white transition duration-300"
+                        aria-label="Email">
+                        <i data-feather="mail" class="w-5 h-5"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#" id="back-to-top"
+        class="fixed bottom-8 right-8 w-12 h-12 bg-blue-600 text-white rounded-full shadow-lg flex items-center justify-center opacity-0 invisible transition-all duration-300 hover:bg-blue-700"
+        aria-label="Voltar ao topo">
+        <i data-feather="arrow-up" class="w-5 h-5"></i>
+    </a>
+
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+
+        // Initialize Feather Icons
+        feather.replace();
+
+        // Back to Top Button
+        const backToTopButton = document.getElementById('back-to-top');
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.remove('opacity-0', 'invisible');
+                backToTopButton.classList.add('opacity-100', 'visible');
+            } else {
+                backToTopButton.classList.remove('opacity-100', 'visible');
+                backToTopButton.classList.add('opacity-0', 'invisible');
+            }
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Vanta.js Globe Background
+        VANTA.GLOBE({
+            el: "#hero",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            color: 0x3b82f6,
+            backgroundColor: 0x111827,
+            size: 0.8
+        });
+    </script>
+</body>
+
+</html>
