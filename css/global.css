@@ -1,0 +1,121 @@
+/* =========================================
+   1. Importações e Configurações Globais
+   ========================================= */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    background-color: #111827;
+    color: #e5e7eb;
+}
+
+.gradient-text {
+    background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+/* =========================================
+   2. Overrides do Tailwind (Tema Escuro)
+   ========================================= */
+/* Força cores escuras mesmo se a classe for bg-white ou bg-gray-50 */
+.bg-white,
+.bg-gray-50,
+.bg-blue-50,
+.bg-purple-50,
+.bg-gradient-to-br.from-blue-50.to-purple-50 {
+    background-color: #1f2937 !important;
+    color: #e5e7eb !important;
+}
+
+.bg-gray-100,
+.bg-blue-100,
+.bg-purple-100,
+.bg-green-100,
+.bg-yellow-100,
+.bg-red-100,
+.bg-indigo-100 {
+    background-color: #374151 !important;
+}
+
+.text-gray-600,
+.text-gray-700,
+.text-gray-800,
+.text-gray-900 {
+    color: #d1d5db !important;
+}
+
+.text-blue-800,
+.text-purple-800,
+.text-green-800,
+.text-yellow-800,
+.text-red-800,
+.text-indigo-800 {
+    color: #e5e7eb !important;
+}
+
+.border-gray-200,
+.border-gray-300 {
+    border-color: #374151 !important;
+}
+
+.bg-gray-200 {
+    background-color: #4b5563 !important;
+}
+
+/* Inputs de formulário */
+input,
+textarea {
+    background-color: #374151 !important;
+    color: #e5e7eb !important;
+    border-color: #4b5563 !important;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #9ca3af !important;
+}
+
+/* =========================================
+   3. Estilos Específicos das Seções
+   ========================================= */
+
+/* Hero Section */
+#hero {
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 10;
+}
+
+/* Habilidades (Efeito Hover nos Badges) */
+.skill-badge {
+    transition: all 0.3s ease;
+}
+
+.skill-badge:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
+}
+
+/* Trajetória (Linha do tempo) */
+.timeline-item:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    left: 11px;
+    top: 24px;
+    height: calc(100% - 24px);
+    width: 2px;
+    background: #374151;
+}
+
+/* Projetos (Cards) */
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3);
+}
