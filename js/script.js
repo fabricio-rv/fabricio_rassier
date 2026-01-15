@@ -266,7 +266,6 @@ function renderContatoFooter() {
     `;
     document.getElementById('contato-form').innerHTML = formHTML;
 
-    // ... (resto da função renderContatoFooter e código do Modal igual ao anterior)
     const infoHTML = `
         <div class="flex items-start">
             <div class="flex-shrink-0 mt-1"><i data-feather="mail" class="w-5 h-5 text-blue-400"></i></div>
@@ -287,14 +286,23 @@ function renderContatoFooter() {
     `;
     document.getElementById('contato-info').innerHTML = infoHTML;
 
+    // AQUI ESTÃO OS LINKS DO FOOTER ATUALIZADOS
     document.getElementById('footer-contato').innerHTML = `
-        <li class="flex items-center"><i data-feather="mail" class="w-4 h-4 mr-2"></i><span>${dadosGeral.contato.email}</span></li>
-        <li class="flex items-center"><i data-feather="phone" class="w-4 h-4 mr-2"></i><span>${dadosGeral.contato.telefone}</span></li>
-        <li class="flex items-center"><i data-feather="map-pin" class="w-4 h-4 mr-2"></i><span>${dadosGeral.contato.localizacao}</span></li>
+        <li class="flex items-center justify-center md:justify-start group">
+            <i data-feather="mail" class="w-4 h-4 mr-2 group-hover:text-blue-400 transition-colors"></i>
+            <a href="mailto:${dadosGeral.contato.email}" class="hover:text-blue-400 transition-colors">${dadosGeral.contato.email}</a>
+        </li>
+        <li class="flex items-center justify-center md:justify-start group">
+            <i data-feather="phone" class="w-4 h-4 mr-2 group-hover:text-blue-400 transition-colors"></i>
+            <a href="tel:${dadosGeral.contato.telefone.replace(/\D/g, '')}" class="hover:text-blue-400 transition-colors">${dadosGeral.contato.telefone}</a>
+        </li>
+        <li class="flex items-center justify-center md:justify-start">
+            <i data-feather="map-pin" class="w-4 h-4 mr-2"></i>
+            <span>${dadosGeral.contato.localizacao}</span>
+        </li>
     `;
     document.getElementById('footer-copy').innerHTML = dadosGeral.footer.copyright;
 }
-
 /* =========================================
    Lógica do Modal (Carrossel e Controle)
    ========================================= */
