@@ -160,8 +160,7 @@
                 <div data-aos="fade-up" data-aos-delay="100"
                     class="w-20 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto"></div>
             </div>
-            <div id="projetos-lista" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            </div>
+            <div id="projetos-lista" class="grid md:grid-cols-2 lg:grid-cols-2 gap-8"> </div>
         </div>
     </section>
 
@@ -265,6 +264,101 @@
         aria-label="Voltar ao topo">
         <i data-feather="arrow-up" class="w-5 h-5"></i>
     </a>
+
+    <div id="project-modal" class="fixed inset-0 z-[100] hidden overflow-y-auto" aria-labelledby="modal-title"
+        role="dialog" aria-modal="true">
+
+        <div class="flex items-center justify-center min-h-screen px-4 pt-4 pb-20 text-center sm:p-0">
+            <div id="modal-overlay" class="fixed inset-0 transition-opacity bg-gray-950/90 backdrop-blur-sm"
+                aria-hidden="true"></div>
+
+            <span class="hidden sm:inline-block sm:align-middle sm:h-screen" aria-hidden="true">&#8203;</span>
+
+            <div
+                class="relative inline-block w-full max-w-7xl p-0 overflow-hidden text-left align-middle transition-all bg-gray-900 border border-gray-800 shadow-2xl rounded-2xl sm:align-middle my-8">
+
+                <button id="close-modal"
+                    class="absolute top-4 right-4 text-gray-400 hover:text-white transition-colors p-2 bg-gray-900/80 hover:bg-gray-800 rounded-full z-50 backdrop-blur-md border border-gray-700 cursor-pointer">
+                    <i data-feather="x" class="w-6 h-6"></i>
+                </button>
+
+                <div class="flex flex-col h-full w-full max-w-6xl mx-auto">
+
+                    <div
+                        class="relative group flex items-center justify-center border-b border-gray-800 h-auto min-h-[250px] sm:h-[600px] p-0 sm:p-4 w-full">
+
+                        <div class="relative h-full w-auto flex justify-center items-center">
+
+                            <img id="modal-image" src="" alt="Projeto"
+                                class="max-w-full max-h-[60vh] sm:max-h-full h-auto sm:h-full w-auto object-contain shadow-2xl rounded-lg">
+
+                            <button id="prev-img"
+                                class="absolute left-0 sm:-left-16 top-1/2 -translate-y-1/2 bg-black/60 hover:bg-blue-600 p-3 rounded-full text-white transition-all opacity-100 sm:opacity-0 sm:group-hover:opacity-100 backdrop-blur-sm border border-white/10 z-40 shadow-lg cursor-pointer">
+                                <i data-feather="chevron-left" class="w-6 h-6"></i>
+                            </button>
+                            <button id="next-img"
+                                class="absolute right-0 sm:-right-16 top-1/2 -translate-y-1/2 bg-black/60 hover:bg-blue-600 p-3 rounded-full text-white transition-all opacity-100 sm:opacity-0 sm:group-hover:opacity-100 backdrop-blur-sm border border-white/10 z-40 shadow-lg cursor-pointer">
+                                <i data-feather="chevron-right" class="w-6 h-6"></i>
+                            </button>
+
+                            <div
+                                class="absolute bottom-4 left-1/2 -translate-x-1/2 bg-black/70 backdrop-blur-md px-3 py-1 rounded-full text-xs text-white font-medium border border-white/10 z-40">
+                                <span id="img-counter">1/1</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="flex flex-col p-6 sm:p-8 bg-gray-900 max-h-[600px] overflow-y-auto custom-scrollbar relative z-10">
+
+                        <div
+                            class="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-8 mb-8 border-b border-gray-800 pb-8">
+                            <div class="flex flex-col gap-4">
+                                <h3 id="modal-title" class="text-3xl md:text-5xl font-bold text-white leading-tight">
+                                </h3>
+                                <div id="modal-badges" class="flex flex-wrap gap-3"></div>
+                            </div>
+
+                            <div class="lg:text-right mt-4 lg:mt-0">
+                                <h4 class="text-lg font-semibold text-blue-400 uppercase tracking-wider mb-3">
+                                    Tecnologias Utilizadas</h4>
+                                <div id="modal-tags" class="flex flex-wrap gap-2 lg:justify-end"></div>
+                            </div>
+                        </div>
+
+                        <div class="prose prose-invert max-w-none mb-8">
+                            <h4 class="text-xl font-bold text-white mb-4 flex items-center">
+                                <i data-feather="file-text" class="w-5 h-5 mr-2 text-purple-500"></i> Descrição
+                            </h4>
+                            <p id="modal-description" class="text-gray-300 leading-relaxed text-base"></p>
+                        </div>
+
+                        <div class="prose prose-invert max-w-none mb-8">
+                            <h4 class="text-xl font-bold text-white mb-4 flex items-center">
+                                <i data-feather="cpu" class="w-5 h-5 mr-2 text-green-500"></i> Detalhes Técnicos
+                            </h4>
+                            <div class="bg-gray-800/30 p-6 rounded-xl border border-gray-800">
+                                <p id="modal-details" class="text-gray-300 leading-relaxed text-base italic"></p>
+                            </div>
+                        </div>
+
+                        <div
+                            class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-4 border-t border-gray-800 mt-auto relative z-50 pointer-events-auto">
+                            <a id="modal-link-live" href="#" target="_blank"
+                                class="flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-4 rounded-lg transition-colors text-sm cursor-pointer relative z-50">
+                                <i data-feather="external-link" class="w-4 h-4"></i> Ver Online
+                            </a>
+                            <a id="modal-link-github" href="#" target="_blank"
+                                class="flex items-center justify-center gap-2 bg-gray-800 hover:bg-gray-700 text-white font-bold py-3 px-4 rounded-lg transition-colors border border-gray-700 text-sm cursor-pointer relative z-50">
+                                <i data-feather="github" class="w-4 h-4"></i> Código Fonte
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="js/dados.js"></script>
     <script src="js/dadosSobre.js"></script>
