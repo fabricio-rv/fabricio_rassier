@@ -44,7 +44,7 @@ const dadosProjetos = [
             { texto: "Em Andamento", cor: "green" }
         ],
         tags: [
-            { nome: "Next.js 14", cor: "yellow" },
+            { nome: "Next.js", cor: "yellow" },
             { nome: "TypeScript", cor: "blue" },
             { nome: "Tailwind CSS", cor: "cyan" },
             { nome: "Sanity CMS", cor: "orange" }
