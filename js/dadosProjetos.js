@@ -1,25 +1,5 @@
 const dadosProjetos = [
     {
-        titulo: "Janine Bicca Doces",
-        descricao: "E-commerce de luxo (Vitrine Digital) com sistema de orçamentos via WhatsApp.",
-        descricaoLonga: "Projeto desenvolvido para posicionar a marca Janine Bicca no mercado de luxo. O site funciona como um catálogo interativo onde o cliente monta sua 'Wishlist' (Carrinho) e envia o pedido formatado diretamente para o WhatsApp da confeitaria. Inclui galeria dinâmica, filtros por categoria e otimização completa para SEO.",
-        detalhesTecnicos: "Desenvolvido com a 'Golden Stack' moderna: Next.js 14 (App Router), TypeScript e Tailwind CSS. Conta com animações fluidas (Framer Motion), gerenciamento de conteúdo via Sanity CMS (Headless) e arquitetura otimizada para performance (Vercel).",
-        imagem: "imagens/janinedoces/janinedoces1.png",
-        galeria: ["imagens/janinedoces/janinedoces1.png"],
-        badges: [
-            { texto: "Freelance", cor: "yellow" },
-            { texto: "Em Andamento", cor: "green" }
-        ],
-        tags: [
-            { nome: "Next.js 14", cor: "black" },
-            { nome: "TypeScript", cor: "blue" },
-            { nome: "Tailwind CSS", cor: "cyan" },
-            { nome: "Sanity CMS", cor: "orange" }
-        ],
-        linkLive: { url: "https://janinebiccadoces.com.br", texto: "janinebiccadoces.com.br" },
-        linkGitHub: "https://github.com/fabricio-rv/janinedoces"
-    },
-    {
         titulo: "Nadia Bolos Cenográficos",
         descricao: "Plataforma de catálogo digital com sistema avançado de filtragem e SEO Local.",
         descricaoLonga: "Site institucional desenvolvido para modernizar o processo de aluguel da 'Nadia Bolos', referência na região Sul. O projeto transformou um catálogo físico em uma experiência digital imersiva, permitindo que clientes filtrem centenas de modelos por ocasião, tamanho e tema. A interface 'Mobile First' foi projetada para converter visitantes em leads qualificados via WhatsApp, com foco total na usabilidade e na apresentação visual dos produtos.",
@@ -51,6 +31,26 @@ const dadosProjetos = [
         ],
         linkLive: { url: "https://nadiaboloscenograficos.com.br", texto: "nadiaboloscenograficos.com.br" },
         linkGitHub: "https://github.com/fabricio-rv/nadiabolosfakes"
+    },
+    {
+        titulo: "Janine Bicca Doces",
+        descricao: "E-commerce de luxo (Vitrine Digital) com sistema de orçamentos via WhatsApp.",
+        descricaoLonga: "Projeto desenvolvido para posicionar a marca Janine Bicca no mercado de luxo. O site funciona como um catálogo interativo onde o cliente monta sua 'Wishlist' (Carrinho) e envia o pedido formatado diretamente para o WhatsApp da confeitaria. Inclui galeria dinâmica, filtros por categoria e otimização completa para SEO.",
+        detalhesTecnicos: "Desenvolvido com a 'Golden Stack' moderna: Next.js 14 (App Router), TypeScript e Tailwind CSS. Conta com animações fluidas (Framer Motion), gerenciamento de conteúdo via Sanity CMS (Headless) e arquitetura otimizada para performance (Vercel).",
+        imagem: "imagens/janinedoces/janinedoces1.png",
+        galeria: ["imagens/janinedoces/janinedoces1.png"],
+        badges: [
+            { texto: "Freelance", cor: "yellow" },
+            { texto: "Em Andamento", cor: "green" }
+        ],
+        tags: [
+            { nome: "Next.js 14", cor: "yellow" },
+            { nome: "TypeScript", cor: "blue" },
+            { nome: "Tailwind CSS", cor: "cyan" },
+            { nome: "Sanity CMS", cor: "orange" }
+        ],
+        linkLive: { url: "https://janinebiccadoces.com.br", texto: "janinebiccadoces.com.br" },
+        linkGitHub: "https://github.com/fabricio-rv/janinedoces"
     },
     {
         titulo: "Site Segurança",
