@@ -1,6 +1,6 @@
 const dadosProjetos = [
     {
-        titulo: "Janine Bicca Doces Finos",
+        titulo: "Janine Bicca Doces",
         descricao: "E-commerce de luxo (Vitrine Digital) com sistema de orçamentos via WhatsApp.",
         descricaoLonga: "Projeto desenvolvido para posicionar a marca Janine Bicca no mercado de luxo. O site funciona como um catálogo interativo onde o cliente monta sua 'Wishlist' (Carrinho) e envia o pedido formatado diretamente para o WhatsApp da confeitaria. Inclui galeria dinâmica, filtros por categoria e otimização completa para SEO.",
         detalhesTecnicos: "Desenvolvido com a 'Golden Stack' moderna: Next.js 14 (App Router), TypeScript e Tailwind CSS. Conta com animações fluidas (Framer Motion), gerenciamento de conteúdo via Sanity CMS (Headless) e arquitetura otimizada para performance (Vercel).",
