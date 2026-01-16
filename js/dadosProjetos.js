@@ -1,23 +1,23 @@
 const dadosProjetos = [
     {
-        titulo: "Site Segurança",
-        descricao: "Landing Page de alta performance com SEO Técnico avançado e roteamento inteligente.",
-        descricaoLonga: "Solução web desenvolvida para a Protepac, referência em segurança eletrônica. O projeto é uma Landing Page otimizada para capturar leads, integrando APIs de WhatsApp e lógica de contato avançada. A interface segue fielmente a identidade visual da marca (Midnight Blue & Gold), com animações CSS personalizadas e foco total em acessibilidade e retenção do usuário.",
-        detalhesTecnicos: "Desenvolvido com HTML5 Semântico e Tailwind CSS. O diferencial é a lógica em Vanilla JS (IIFE) que detecta o dispositivo do usuário (iOS/Android/Desktop) para abrir o app de e-mail nativo correto (Deep Linking). Implementação robusta de SEO Técnico (JSON-LD LocalBusiness, OpenGraph) e otimizações de performance (Lighthouse 95+) com carregamento assíncrono e preloading de assets.",
-        imagem: "imagens/site_seguranca/protepac_site1.png",
-        galeria: ["imagens/site_seguranca/protepac_site1.png",
-            "imagens/site_seguranca/protepac_site2.png"],
+        titulo: "Janine Bicca Doces Finos",
+        descricao: "E-commerce de luxo (Vitrine Digital) com sistema de orçamentos via WhatsApp.",
+        descricaoLonga: "Projeto desenvolvido para posicionar a marca Janine Bicca no mercado de luxo. O site funciona como um catálogo interativo onde o cliente monta sua 'Wishlist' (Carrinho) e envia o pedido formatado diretamente para o WhatsApp da confeitaria. Inclui galeria dinâmica, filtros por categoria e otimização completa para SEO.",
+        detalhesTecnicos: "Desenvolvido com a 'Golden Stack' moderna: Next.js 14 (App Router), TypeScript e Tailwind CSS. Conta com animações fluidas (Framer Motion), gerenciamento de conteúdo via Sanity CMS (Headless) e arquitetura otimizada para performance (Vercel).",
+        imagem: "imagens/janinedoces/janinedoces1.png",
+        galeria: ["imagens/janinedoces/janinedoces1.png"],
         badges: [
-            { texto: "Experiência Profissional", cor: "yellow" },
-            { texto: "Concluído", cor: "blue" }
+            { texto: "Freelance", cor: "yellow" },
+            { texto: "Em Andamento", cor: "green" }
         ],
         tags: [
-            { nome: "JavaScript", cor: "blue" },
-            { nome: "HTML", cor: "yellow" },
-            { nome: "TailwindCSS", cor: "indigo" }
+            { nome: "Next.js 14", cor: "black" },
+            { nome: "TypeScript", cor: "blue" },
+            { nome: "Tailwind CSS", cor: "cyan" },
+            { nome: "Sanity CMS", cor: "orange" }
         ],
-        linkLive: { url: "https://www.protepac.com.br", texto: "protepac.com.br" },
-        linkGitHub: "https://github.com/fabricio-rv/site_seguranca"
+        linkLive: { url: "https://janinebiccadoces.com.br", texto: "janinebiccadoces.com.br" },
+        linkGitHub: "https://github.com/fabricio-rv/janinedoces"
     },
     {
         titulo: "Nadia Bolos Cenográficos",
@@ -41,7 +41,7 @@ const dadosProjetos = [
             , "imagens/nadiabolos/nadiabolos13.png"
         ],
         badges: [
-            { texto: "Experiência Profissional", cor: "yellow" },
+            { texto: "Freelance", cor: "yellow" },
             { texto: "Concluído", cor: "blue" }
         ],
         tags: [
@@ -51,6 +51,26 @@ const dadosProjetos = [
         ],
         linkLive: { url: "https://nadiaboloscenograficos.com.br", texto: "nadiaboloscenograficos.com.br" },
         linkGitHub: "https://github.com/fabricio-rv/nadiabolosfakes"
+    },
+    {
+        titulo: "Site Segurança",
+        descricao: "Landing Page de alta performance com SEO Técnico avançado e roteamento inteligente.",
+        descricaoLonga: "Solução web desenvolvida para a Protepac, referência em segurança eletrônica. O projeto é uma Landing Page otimizada para capturar leads, integrando APIs de WhatsApp e lógica de contato avançada. A interface segue fielmente a identidade visual da marca (Midnight Blue & Gold), com animações CSS personalizadas e foco total em acessibilidade e retenção do usuário.",
+        detalhesTecnicos: "Desenvolvido com HTML5 Semântico e Tailwind CSS. O diferencial é a lógica em Vanilla JS (IIFE) que detecta o dispositivo do usuário (iOS/Android/Desktop) para abrir o app de e-mail nativo correto (Deep Linking). Implementação robusta de SEO Técnico (JSON-LD LocalBusiness, OpenGraph) e otimizações de performance (Lighthouse 95+) com carregamento assíncrono e preloading de assets.",
+        imagem: "imagens/site_seguranca/protepac_site1.png",
+        galeria: ["imagens/site_seguranca/protepac_site1.png",
+            "imagens/site_seguranca/protepac_site2.png"],
+        badges: [
+            { texto: "Freelance", cor: "yellow" },
+            { texto: "Concluído", cor: "blue" }
+        ],
+        tags: [
+            { nome: "JavaScript", cor: "blue" },
+            { nome: "HTML", cor: "yellow" },
+            { nome: "TailwindCSS", cor: "indigo" }
+        ],
+        linkLive: { url: "https://www.protepac.com.br", texto: "protepac.com.br" },
+        linkGitHub: "https://github.com/fabricio-rv/site_seguranca"
     },
     {
         titulo: "App Segurança",
@@ -104,7 +124,7 @@ const dadosProjetos = [
             , "imagens/app_seguranca/protepac_app46.png"
         ],
         badges: [
-            { texto: "Experiência Profissional", cor: "yellow" },
+            { texto: "Freelance", cor: "yellow" },
             { texto: "Em Andamento", cor: "green" }
         ],
         tags: [
@@ -114,53 +134,6 @@ const dadosProjetos = [
         ],
         linkLive: { url: "https://protepacapp.vercel.app", texto: "protepacapp.vercel.app" },
         linkGitHub: "https://github.com/fabricio-rv/app_seguranca"
-    },
-    {
-        titulo: "iFut",
-        descricao: "Plataforma Full Stack PHP para organização de partidas e avaliação de jogadores.",
-        descricaoLonga: "Sistema web completo desenvolvido como TCC, focado em resolver a dor de organizar o futebol semanal. O iFut gerencia todo o ciclo de uma partida: desde o agendamento e convite de jogadores até o sistema de avaliação pós-jogo (reputação). Conta com funcionalidades sociais como chat, perfis de jogadores e histórico de partidas, tudo envelopado em uma interface moderna com tema Neon/Dark.",
-        detalhesTecnicos: "Backend robusto em PHP 8+ com arquitetura MVC-like (separação de lógica, views e banco de dados). O sistema gerencia autenticação segura de sessões, upload de imagens e complexas queries SQL para relacionar jogadores, partidas e avaliações. O frontend utiliza Bootstrap 5 com personalizações CSS3 avançadas (animações keyframes) e JavaScript para interatividade dinâmica.",
-        imagem: "imagens/ifut/ifut26.png",
-        galeria: ["imagens/ifut/ifut26.png",
-            "imagens/ifut/ifut1.png",
-            "imagens/ifut/ifut2.png",
-            "imagens/ifut/ifut3.png",
-            "imagens/ifut/ifut4.png",
-            "imagens/ifut/ifut5.png",
-            "imagens/ifut/ifut6.png",
-            "imagens/ifut/ifut7.png",
-            "imagens/ifut/ifut8.png",
-            "imagens/ifut/ifut9.png",
-            "imagens/ifut/ifut10.png",
-            "imagens/ifut/ifut11.png",
-            "imagens/ifut/ifut12.png",
-            "imagens/ifut/ifut13.png",
-            "imagens/ifut/ifut14.png",
-            "imagens/ifut/ifut15.png",
-            "imagens/ifut/ifut16.png",
-            "imagens/ifut/ifut17.png",
-            "imagens/ifut/ifut18.png",
-            "imagens/ifut/ifut19.png",
-            "imagens/ifut/ifut20.png",
-            "imagens/ifut/ifut21.png",
-            "imagens/ifut/ifut22.png",
-            "imagens/ifut/ifut23.png",
-            "imagens/ifut/ifut24.png",
-            "imagens/ifut/ifut25.png"
-        ],
-        badges: [
-            { texto: "Projeto Acadêmico", cor: "indigo" },
-            { texto: "Concluído", cor: "blue" }
-        ],
-        tags: [
-            { nome: "PHP", cor: "blue" },
-            { nome: "MySQL", cor: "green" },
-            { nome: "JavaScript", cor: "yellow" },
-            { nome: "HTML", cor: "purple" },
-            { nome: "TailwindCSS", cor: "indigo" }
-        ],
-        linkLive: { url: "http://fut.rf.gd/", texto: "fut.rf.gd" },
-        linkGitHub: "https://github.com/fabricio-rv/ifut"
     },
     {
         titulo: "Portfólio Pessoal",
@@ -298,22 +271,50 @@ const dadosProjetos = [
         linkGitHub: "https://github.com/fabricio-rv/fut"
     },
     {
-        titulo: "Janine Doces",
-        descricao: "Vitrine digital para encomendas de doces artesanais.",
-        descricaoLonga: "Site desenvolvido para profissionalizar a divulgação dos doces artesanais da Janine. Serve como um portfólio digital atraente para festas e eventos, permitindo que clientes conheçam a qualidade dos produtos e solicitem orçamentos de forma prática.",
-        detalhesTecnicos: "Estrutura leve utilizando HTML5, CSS3 e JavaScript. O foco do desenvolvimento é a apresentação visual dos produtos e a conversão de visitantes em clientes através de integração direta com WhatsApp.",
-        imagem: "imagens/janinedoces/janinedoces.png",
-        galeria: ["imagens/janinedoces/janinedoces.png"],
+        titulo: "iFut",
+        descricao: "Plataforma Full Stack PHP para organização de partidas e avaliação de jogadores.",
+        descricaoLonga: "Sistema web completo desenvolvido como TCC, focado em resolver a dor de organizar o futebol semanal. O iFut gerencia todo o ciclo de uma partida: desde o agendamento e convite de jogadores até o sistema de avaliação pós-jogo (reputação). Conta com funcionalidades sociais como chat, perfis de jogadores e histórico de partidas, tudo envelopado em uma interface moderna com tema Neon/Dark.",
+        detalhesTecnicos: "Backend robusto em PHP 8+ com arquitetura MVC-like (separação de lógica, views e banco de dados). O sistema gerencia autenticação segura de sessões, upload de imagens e complexas queries SQL para relacionar jogadores, partidas e avaliações. O frontend utiliza Bootstrap 5 com personalizações CSS3 avançadas (animações keyframes) e JavaScript para interatividade dinâmica.",
+        imagem: "imagens/ifut/ifut26.png",
+        galeria: ["imagens/ifut/ifut26.png",
+            "imagens/ifut/ifut1.png",
+            "imagens/ifut/ifut2.png",
+            "imagens/ifut/ifut3.png",
+            "imagens/ifut/ifut4.png",
+            "imagens/ifut/ifut5.png",
+            "imagens/ifut/ifut6.png",
+            "imagens/ifut/ifut7.png",
+            "imagens/ifut/ifut8.png",
+            "imagens/ifut/ifut9.png",
+            "imagens/ifut/ifut10.png",
+            "imagens/ifut/ifut11.png",
+            "imagens/ifut/ifut12.png",
+            "imagens/ifut/ifut13.png",
+            "imagens/ifut/ifut14.png",
+            "imagens/ifut/ifut15.png",
+            "imagens/ifut/ifut16.png",
+            "imagens/ifut/ifut17.png",
+            "imagens/ifut/ifut18.png",
+            "imagens/ifut/ifut19.png",
+            "imagens/ifut/ifut20.png",
+            "imagens/ifut/ifut21.png",
+            "imagens/ifut/ifut22.png",
+            "imagens/ifut/ifut23.png",
+            "imagens/ifut/ifut24.png",
+            "imagens/ifut/ifut25.png"
+        ],
         badges: [
-            { texto: "Experiência Profissional", cor: "yellow" },
-            { texto: "Em Andamento", cor: "green" }
+            { texto: "Projeto Acadêmico", cor: "indigo" },
+            { texto: "Concluído", cor: "blue" }
         ],
         tags: [
+            { nome: "PHP", cor: "blue" },
+            { nome: "MySQL", cor: "green" },
             { nome: "JavaScript", cor: "yellow" },
-            { nome: "HTML", cor: "orange" },
-            { nome: "CSS", cor: "blue" }
+            { nome: "HTML", cor: "purple" },
+            { nome: "TailwindCSS", cor: "indigo" }
         ],
-        linkLive: { url: "https://janinebiccadoces.com.br", texto: "janinebiccadoces.com.br" },
-        linkGitHub: "https://github.com/fabricio-rv/janinedoces"
+        linkLive: { url: "http://fut.rf.gd/", texto: "fut.rf.gd" },
+        linkGitHub: "https://github.com/fabricio-rv/ifut"
     }
 ];
