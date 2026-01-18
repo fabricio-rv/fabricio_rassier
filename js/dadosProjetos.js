@@ -1,0 +1,458 @@
+const dadosProjetos = [
+    {
+        titulo: "Nadia Bolos Cenográficos",
+        descricao: "Plataforma de catálogo digital com sistema avançado de filtragem e SEO Local.",
+        descricaoLonga: "Site institucional desenvolvido para modernizar o processo de aluguel da 'Nadia Bolos', referência na região Sul. O projeto transformou um catálogo físico em uma experiência digital imersiva, permitindo que clientes filtrem centenas de modelos por ocasião, tamanho e tema. A interface 'Mobile First' foi projetada para converter visitantes em leads qualificados via WhatsApp, com foco total na usabilidade e na apresentação visual dos produtos.",
+        detalhesTecnicos: "Construído em arquitetura JAMstack (HTML5, CSS3, Vanilla JS) para máxima performance (Score 100 no PageSpeed). A lógica de filtragem complexa manipula o DOM em tempo real sem recarregar a página. Destaque para a organização modular dos dados em múltiplos arquivos JS e implementação robusta de Rich Snippets (Schema.org) para SEO Local e Social Sharing (Open Graph).",
+        imagem: "imagens/nadiabolos/nadiabolos1.png",
+        galeria: ["imagens/nadiabolos/nadiabolos1.png"
+            , "imagens/nadiabolos/nadiabolos2.png"
+            , "imagens/nadiabolos/nadiabolos14.png"
+            , "imagens/nadiabolos/nadiabolos3.png"
+            , "imagens/nadiabolos/nadiabolos4.png"
+            , "imagens/nadiabolos/nadiabolos5.png"
+            , "imagens/nadiabolos/nadiabolos6.png"
+            , "imagens/nadiabolos/nadiabolos7.png"
+            , "imagens/nadiabolos/nadiabolos8.png"
+            , "imagens/nadiabolos/nadiabolos9.png"
+            , "imagens/nadiabolos/nadiabolos10.png"
+            , "imagens/nadiabolos/nadiabolos11.png"
+            , "imagens/nadiabolos/nadiabolos12.png"
+            , "imagens/nadiabolos/nadiabolos13.png"
+        ],
+        badges: [
+            { texto: "Freelance", cor: "yellow" },
+            { texto: "Concluído", cor: "blue" }
+        ],
+        tags: [
+            { nome: "JavaScript", cor: "yellow" },
+            { nome: "HTML", cor: "orange" },
+            { nome: "CSS", cor: "blue" }
+        ],
+        linkLive: { url: "https://nadiaboloscenograficos.com.br", texto: "nadiaboloscenograficos.com.br" },
+        linkGitHub: "https://github.com/fabricio-rv/nadiabolosfakes"
+    },
+    {
+        titulo: "Janine Bicca Doces",
+        descricao: "E-commerce de luxo (Vitrine Digital) com sistema de orçamentos via WhatsApp.",
+        descricaoLonga: "Projeto desenvolvido para posicionar a marca Janine Bicca no mercado de luxo. O site funciona como um catálogo interativo onde o cliente monta sua 'Wishlist' (Carrinho) e envia o pedido formatado diretamente para o WhatsApp da confeitaria. Inclui galeria dinâmica, filtros por categoria e otimização completa para SEO.",
+        detalhesTecnicos: "Desenvolvido com a 'Golden Stack' moderna: Next.js 14 (App Router), TypeScript e Tailwind CSS. Conta com animações fluidas (Framer Motion), gerenciamento de conteúdo via Sanity CMS (Headless) e arquitetura otimizada para performance (Vercel).",
+        imagem: "imagens/janinedoces/janinedoces1.png",
+        galeria: ["imagens/janinedoces/janinedoces1.png"
+            , "imagens/janinedoces/janinedoces2.png"
+            , "imagens/janinedoces/janinedoces3.png"
+            , "imagens/janinedoces/janinedoces4.png"
+            , "imagens/janinedoces/janinedoces5.png"
+            , "imagens/janinedoces/janinedoces6.png"
+            , "imagens/janinedoces/janinedoces7.png"
+            , "imagens/janinedoces/janinedoces8.png"
+            , "imagens/janinedoces/janinedoces9.png"
+            , "imagens/janinedoces/janinedoces10.png"
+            , "imagens/janinedoces/janinedoces11.png"
+            , "imagens/janinedoces/janinedoces12.png"
+            , "imagens/janinedoces/janinedoces13.png"
+            , "imagens/janinedoces/janinedoces14.png"
+        ],
+        badges: [
+            { texto: "Freelance", cor: "yellow" },
+            { texto: "Em Andamento", cor: "green" }
+        ],
+        tags: [
+            { nome: "Next.js", cor: "yellow" },
+            { nome: "TypeScript", cor: "blue" },
+            { nome: "Tailwind CSS", cor: "cyan" },
+            { nome: "Sanity CMS", cor: "orange" }
+        ],
+        linkLive: { url: "https://janinebiccadoces.com.br", texto: "janinebiccadoces.com.br" },
+        linkGitHub: "https://github.com/fabricio-rv/janinedoces"
+    },
+    {
+        titulo: "Site Segurança",
+        descricao: "Landing Page de alta performance com SEO Técnico avançado e roteamento inteligente.",
+        descricaoLonga: "Solução web desenvolvida para a Protepac, referência em segurança eletrônica. O projeto é uma Landing Page otimizada para capturar leads, integrando APIs de WhatsApp e lógica de contato avançada. A interface segue fielmente a identidade visual da marca (Midnight Blue & Gold), com animações CSS personalizadas e foco total em acessibilidade e retenção do usuário.",
+        detalhesTecnicos: "Desenvolvido com HTML5 Semântico e Tailwind CSS. O diferencial é a lógica em Vanilla JS (IIFE) que detecta o dispositivo do usuário (iOS/Android/Desktop) para abrir o app de e-mail nativo correto (Deep Linking). Implementação robusta de SEO Técnico (JSON-LD LocalBusiness, OpenGraph) e otimizações de performance (Lighthouse 95+) com carregamento assíncrono e preloading de assets.",
+        imagem: "imagens/site_seguranca/protepac_site1.png",
+        galeria: ["imagens/site_seguranca/protepac_site1.png",
+            "imagens/site_seguranca/protepac_site2.png"],
+        badges: [
+            { texto: "Freelance", cor: "yellow" },
+            { texto: "Concluído", cor: "blue" }
+        ],
+        tags: [
+            { nome: "JavaScript", cor: "blue" },
+            { nome: "HTML", cor: "yellow" },
+            { nome: "TailwindCSS", cor: "indigo" }
+        ],
+        linkLive: { url: "https://www.protepac.com.br", texto: "protepac.com.br" },
+        linkGitHub: "https://github.com/fabricio-rv/site_seguranca"
+    },
+    {
+        titulo: "App Segurança",
+        descricao: "Ecossistema mobile multiplataforma para gestão de chamados e CRM.",
+        descricaoLonga: "Aplicativo corporativo desenvolvido para centralizar as operações da Protepac. O sistema atua como um Hub de Serviços com dois módulos distintos: a 'Área do Cliente' (para abertura de chamados técnicos, solicitações financeiras e alertas de segurança) e o 'Painel Administrativo' (para gestão de tickets, CRM e controle de usuários em tempo real). A interface segue rigorosamente o Design System da marca, garantindo uma experiência fluida entre o site e o app.",
+        detalhesTecnicos: "Desenvolvido em Flutter (Dart) com arquitetura baseada no padrão BLoC, garantindo separação total entre regras de negócio e interface. O sistema de roteamento é modular, implementando controle de acesso baseado em funções (RBAC) para separar Clientes de Administradores. O backend utiliza Supabase (PostgreSQL) para autenticação segura e persistência de dados, com suporte nativo para Android, iOS e Web.",
+        imagem: "imagens/app_seguranca/protepac_app1.png",
+        galeria: ["imagens/app_seguranca/protepac_app1.png", "imagens/app_seguranca/protepac_app3.png"
+            , "imagens/app_seguranca/protepac_app4.png"
+            , "imagens/app_seguranca/protepac_app5.png"
+            , "imagens/app_seguranca/protepac_app6.png"
+            , "imagens/app_seguranca/protepac_app7.png"
+            , "imagens/app_seguranca/protepac_app8.png"
+            , "imagens/app_seguranca/protepac_app9.png"
+            , "imagens/app_seguranca/protepac_app10.png"
+            , "imagens/app_seguranca/protepac_app11.png"
+            , "imagens/app_seguranca/protepac_app12.png"
+            , "imagens/app_seguranca/protepac_app13.png"
+            , "imagens/app_seguranca/protepac_app14.png"
+            , "imagens/app_seguranca/protepac_app15.png"
+            , "imagens/app_seguranca/protepac_app16.png"
+            , "imagens/app_seguranca/protepac_app17.png"
+            , "imagens/app_seguranca/protepac_app18.png"
+            , "imagens/app_seguranca/protepac_app19.png"
+            , "imagens/app_seguranca/protepac_app20.png"
+            , "imagens/app_seguranca/protepac_app21.png"
+            , "imagens/app_seguranca/protepac_app22.png"
+            , "imagens/app_seguranca/protepac_app23.png"
+            , "imagens/app_seguranca/protepac_app24.png"
+            , "imagens/app_seguranca/protepac_app25.png"
+            , "imagens/app_seguranca/protepac_app26.png"
+            , "imagens/app_seguranca/protepac_app27.png"
+            , "imagens/app_seguranca/protepac_app28.png"
+            , "imagens/app_seguranca/protepac_app29.png"
+            , "imagens/app_seguranca/protepac_app30.png"
+            , "imagens/app_seguranca/protepac_app31.png"
+            , "imagens/app_seguranca/protepac_app32.png"
+            , "imagens/app_seguranca/protepac_app33.png"
+            , "imagens/app_seguranca/protepac_app34.png"
+            , "imagens/app_seguranca/protepac_app35.png"
+            , "imagens/app_seguranca/protepac_app36.png"
+            , "imagens/app_seguranca/protepac_app37.png"
+            , "imagens/app_seguranca/protepac_app38.png"
+            , "imagens/app_seguranca/protepac_app39.png"
+            , "imagens/app_seguranca/protepac_app40.png"
+            , "imagens/app_seguranca/protepac_app41.png"
+            , "imagens/app_seguranca/protepac_app42.png"
+            , "imagens/app_seguranca/protepac_app43.png"
+            , "imagens/app_seguranca/protepac_app44.png"
+            , "imagens/app_seguranca/protepac_app45.png"
+            , "imagens/app_seguranca/protepac_app46.png"
+        ],
+        badges: [
+            { texto: "Freelance", cor: "yellow" },
+            { texto: "Em Andamento", cor: "green" }
+        ],
+        tags: [
+            { nome: "Flutter", cor: "blue" },
+            { nome: "Dart", cor: "purple" },
+            { nome: "Firebase", cor: "green" }
+        ],
+        linkLive: { url: "https://protepacapp.vercel.app", texto: "protepacapp.vercel.app" },
+        linkGitHub: "https://github.com/fabricio-rv/app_seguranca"
+    },
+    {
+        titulo: "Futly Scout",
+        descricao: "Web App para scouts e clubes: organização, visualização e fluxo profissional para análise esportiva.",
+        descricaoLonga: "Aplicação criada para facilitar o trabalho de scouts profissionais e clubes na rotina de observação e análise. O Futly Scout centraliza informações em uma interface objetiva e rápida, com foco em experiência premium, leitura eficiente e fluxo de consulta pensado para uso recorrente. A proposta é servir como base escalável para um ecossistema completo de scouting e relatórios.",
+        detalhesTecnicos: "Desenvolvido em Flutter (Dart) com layout moderno em preto e branco. Estrutura modular e componentes reutilizáveis para escalar features como relatórios, filtros avançados, pipeline de observação e exportação local no futuro.",
+        imagem: "imagens/futly_scout/futly_scout9.png",
+        galeria: ["imagens/futly_scout/futly_scout1.png",
+            "imagens/futly_scout/futly_scout2.png",
+            "imagens/futly_scout/futly_scout3.png",
+            "imagens/futly_scout/futly_scout4.png",
+            "imagens/futly_scout/futly_scout5.png",
+            "imagens/futly_scout/futly_scout6.png",
+            "imagens/futly_scout/futly_scout7.png",
+            "imagens/futly_scout/futly_scout8.png",
+            "imagens/futly_scout/futly_scout9.png",
+            "imagens/futly_scout/futly_scout10.png",
+            "imagens/futly_scout/futly_scout11.png",
+            "imagens/futly_scout/futly_scout12.png",
+            "imagens/futly_scout/futly_scout13.png",
+            "imagens/futly_scout/futly_scout14.png",
+            "imagens/futly_scout/futly_scout15.png",
+            "imagens/futly_scout/futly_scout16.png",
+            "imagens/futly_scout/futly_scout17.png",
+            "imagens/futly_scout/futly_scout18.png"
+        ],
+        badges: [
+            { texto: "Projeto Pessoal", cor: "purple" },
+            { texto: "Em Andamento", cor: "green" }
+        ],
+        tags: [
+            { nome: "Flutter", cor: "blue" },
+            { nome: "Dart", cor: "purple" },
+        ],
+        linkLive: { url: "https://futly-scout-web-app.vercel.app", texto: "futly-scout-web-app.vercel.app" },
+        linkGitHub: "https://github.com/fabricio-rv/futly_scout"
+    },
+    {
+        titulo: "Futly Talent",
+        descricao: "Radar social de talentos com perfis de jogadores hiper detalhados e busca avançada por características.",
+        descricaoLonga: "O Futly Talent é um aplicativo focado em descoberta e curadoria de atletas, combinando uma base enxuta e altamente valiosa de jogadores 'em observação' com uma experiência social no estilo Instagram/TikTok. O núcleo do produto é o Perfil do Jogador: uma ficha completa com atributos técnicos, táticos, físicos e mentais (avaliações qualitativas), tags de estilo, strengths/weaknesses, 'onde rende mais', evolução de perfil e faixa de mercado estimada. Além disso, o app permite explorar e filtrar atletas por posição, faixa etária, pé dominante, liga/país, estilo de jogo e outros critérios — ideal para fãs avançados, scouts iniciantes e quem procura jogadores fora do radar.",
+        detalhesTecnicos: "Desenvolvido em Flutter (Dart) com arquitetura organizada em camadas (Models, Providers/ChangeNotifier) e navegação por telas com BottomNavigationBar (5 abas). Todo o comportamento de um app: modo visitante (sem login), autenticação (login/cadastro), feed de posts vinculados a jogadores, comentários, curtidas, reposts, favoritos/watchlist, comparação de jogadores, DM/chat, criação de publicações e cadastro de novos jogadores pela comunidade com identificação 'Criado por @usuário' e status de verificação. O design utiliza Material 3 e componentes reutilizáveis para manter consistência visual e escalabilidade.",
+        imagem: "imagens/futly_talent/futly_talent8.png",
+        galeria: [
+            "imagens/futly_talent/futly_talent1.png",
+            "imagens/futly_talent/futly_talent2.png",
+            "imagens/futly_talent/futly_talent3.png",
+            "imagens/futly_talent/futly_talent4.png",
+            "imagens/futly_talent/futly_talent5.png",
+            "imagens/futly_talent/futly_talent6.png",
+            "imagens/futly_talent/futly_talent7.png",
+            "imagens/futly_talent/futly_talent8.png",
+            "imagens/futly_talent/futly_talent9.png",
+            "imagens/futly_talent/futly_talent10.png",
+            "imagens/futly_talent/futly_talent11.png",
+            "imagens/futly_talent/futly_talent12.png",
+            "imagens/futly_talent/futly_talent13.png",
+            "imagens/futly_talent/futly_talent14.png",
+            "imagens/futly_talent/futly_talent15.png",
+            "imagens/futly_talent/futly_talent16.png",
+            "imagens/futly_talent/futly_talent17.png",
+            "imagens/futly_talent/futly_talent18.png",
+            "imagens/futly_talent/futly_talent19.png",
+            "imagens/futly_talent/futly_talent20.png",
+            "imagens/futly_talent/futly_talent21.png",
+            "imagens/futly_talent/futly_talent22.png",
+            "imagens/futly_talent/futly_talent23.png",
+            "imagens/futly_talent/futly_talent24.png",
+            "imagens/futly_talent/futly_talent25.png",
+            "imagens/futly_talent/futly_talent26.png",
+            "imagens/futly_talent/futly_talent27.png",
+            "imagens/futly_talent/futly_talent28.png"
+        ],
+        badges: [
+            { texto: "Projeto Pessoal", cor: "purple" },
+            { texto: "Em Andamento", cor: "green" }
+        ],
+        tags: [
+            { nome: "Flutter", cor: "blue" },
+            { nome: "Dart", cor: "purple" },
+        ],
+        linkLive: { url: "https://futly-talent-web-app.vercel.app", texto: "futly-talent-web-app.vercel.app" },
+        linkGitHub: "https://github.com/fabricio-rv/futly_talent"
+    },
+    {
+        titulo: "Futly Prime",
+        descricao: "App premium de apoio ao atleta (B2C), com rotinas, biblioteca e diversos modos para ajudar jogadores de futebol profissional.",
+        descricaoLonga: "Aplicação construída para apoiar o atleta no dia a dia de forma leve e sem cobrança. O Futly Prime organiza conteúdo por áreas (Recuperação, Cabeça, Dia de Jogo, Sono, Alimentação, Prevenção) com navegação por cards e checklists rápidos. O foco é entregar uma experiência moderna, limpa e consistente, com linguagem neutra e orientações gerais, mantendo privacidade e uso opcional.",
+        detalhesTecnicos: "Desenvolvido em Flutter (Dart) com UI moderna em preto e branco. Roteamento organizado por módulos, componentes reutilizáveis de cards e listas, e estrutura pensada para escalar com novas rotinas, trilhas e conteúdos sem reescrever telas.",
+        imagem: "imagens/futly_prime/futly_prime4.png",
+        galeria: ["imagens/futly_prime/futly_prime1.png",
+            "imagens/futly_prime/futly_prime2.png",
+            "imagens/futly_prime/futly_prime3.png",
+            "imagens/futly_prime/futly_prime4.png",
+            "imagens/futly_prime/futly_prime5.png",
+            "imagens/futly_prime/futly_prime6.png",
+            "imagens/futly_prime/futly_prime7.png",
+            "imagens/futly_prime/futly_prime8.png",
+            "imagens/futly_prime/futly_prime9.png",
+            "imagens/futly_prime/futly_prime10.png",
+            "imagens/futly_prime/futly_prime11.png",
+            "imagens/futly_prime/futly_prime12.png",
+            "imagens/futly_prime/futly_prime13.png",
+            "imagens/futly_prime/futly_prime14.png",
+            "imagens/futly_prime/futly_prime15.png",
+            "imagens/futly_prime/futly_prime16.png",
+            "imagens/futly_prime/futly_prime17.png",
+            "imagens/futly_prime/futly_prime18.png",
+            "imagens/futly_prime/futly_prime19.png",
+            "imagens/futly_prime/futly_prime20.png",
+            "imagens/futly_prime/futly_prime21.png",
+            "imagens/futly_prime/futly_prime22.png",
+            "imagens/futly_prime/futly_prime23.png"
+        ],
+        badges: [
+            { texto: "Projeto Pessoal", cor: "purple" },
+            { texto: "Em Andamento", cor: "green" }
+        ],
+        tags: [
+            { nome: "Flutter", cor: "blue" },
+            { nome: "Dart", cor: "purple" },
+        ],
+        linkLive: { url: "https://futly-prime-web-app.vercel.app", texto: "futly-prime-web-app.vercel.app" },
+        linkGitHub: "https://github.com/fabricio-rv/futly_prime"
+    },
+    {
+        titulo: "Futly Go",
+        descricao: "SuperApp social e competitivo para o ecossistema do futebol amador.",
+        descricaoLonga: "A evolução definitiva do gerenciamento esportivo. O Matchly GO atua como uma rede social verticalizada que conecta Jogadores, Técnicos e Torcedores em um único ecossistema. Mais do que agendar jogos, a plataforma gamifica a carreira amadora com Rankings globais, Feed de notícias interativo, Loja virtual e integração de estatísticas profissionais. O foco é entregar uma experiência de 'pro-player' para o futebol de várzea.",
+        detalhesTecnicos: "Desenvolvido em Flutter com backend Serverless via Supabase (PostgreSQL), garantindo persistência de dados e autenticação segura (JWT). A arquitetura utiliza o padrão Provider (MultiProvider) para gerenciamento de estado global escalável através de dezenas de módulos. O sistema conta com funcionalidades Real-Time (Chat e Matchmaking), integração com APIs externas (SofaScore) e separação clara de regras de negócio via Controllers.",
+        imagem: "imagens/futly_go/fut3.png",
+        galeria: ["imagens/futly_go/fut1.png",
+            "imagens/futly_go/fut2.png",
+            "imagens/futly_go/fut3.png",
+            "imagens/futly_go/fut4.png",
+            "imagens/futly_go/fut5.png",
+            "imagens/futly_go/fut6.png",
+            "imagens/futly_go/fut7.png",
+            "imagens/futly_go/fut8.png",
+            "imagens/futly_go/fut9.png",
+            "imagens/futly_go/fut10.png",
+            "imagens/futly_go/fut11.png"
+        ],
+        badges: [
+            { texto: "Projeto Pessoal", cor: "purple" },
+            { texto: "Em Andamento", cor: "green" }
+        ],
+        tags: [
+            { nome: "Flutter", cor: "blue" },
+            { nome: "Dart", cor: "purple" }
+        ],
+        linkLive: { url: "https://fut-web-app.vercel.app", texto: "fut-web-app.vercel.app" },
+        linkGitHub: "https://github.com/fabricio-rv/fut"
+    },
+    {
+        titulo: "Futly Pro",
+        descricao: "SuperApp social e competitivo para o ecossistema do futebol amador.",
+        descricaoLonga: "A evolução definitiva do gerenciamento esportivo. O Matchly GO atua como uma rede social verticalizada que conecta Jogadores, Técnicos e Torcedores em um único ecossistema. Mais do que agendar jogos, a plataforma gamifica a carreira amadora com Rankings globais, Feed de notícias interativo, Loja virtual e integração de estatísticas profissionais. O foco é entregar uma experiência de 'pro-player' para o futebol de várzea.",
+        detalhesTecnicos: "Desenvolvido em Flutter com backend Serverless via Supabase (PostgreSQL), garantindo persistência de dados e autenticação segura (JWT). A arquitetura utiliza o padrão Provider (MultiProvider) para gerenciamento de estado global escalável através de dezenas de módulos. O sistema conta com funcionalidades Real-Time (Chat e Matchmaking), integração com APIs externas (SofaScore) e separação clara de regras de negócio via Controllers.",
+        imagem: "imagens/futly_pro/hub1.png",
+        galeria: ["imagens/futly_pro/hub1.png",
+            "imagens/futly_pro/hub2.png",
+            "imagens/futly_pro/hub3.png",
+            "imagens/futly_pro/hub4.png",
+            "imagens/futly_pro/hub5.png",
+            "imagens/futly_pro/hub6.png",
+            "imagens/futly_pro/hub7.png",
+            "imagens/futly_pro/hub8.png",
+            "imagens/futly_pro/hub9.png",
+            "imagens/futly_pro/hub10.png",
+            "imagens/futly_pro/hub11.png",
+            "imagens/futly_pro/hub12.png",
+            "imagens/futly_pro/hub13.png",
+            "imagens/futly_pro/hub14.png",
+            "imagens/futly_pro/hub15.png",
+            "imagens/futly_pro/hub16.png",
+            "imagens/futly_pro/hub17.png",
+            "imagens/futly_pro/hub18.png",
+            "imagens/futly_pro/hub19.png",
+            "imagens/futly_pro/hub20.png",
+            "imagens/futly_pro/hub21.png",
+            "imagens/futly_pro/hub22.png",
+            "imagens/futly_pro/hub23.png",
+            "imagens/futly_pro/hub24.png",
+            "imagens/futly_pro/hub25.png",
+            "imagens/futly_pro/hub26.png",
+            "imagens/futly_pro/hub27.png",
+            "imagens/futly_pro/hub28.png",
+            "imagens/futly_pro/hub29.png",
+            "imagens/futly_pro/hub30.png",
+            "imagens/futly_pro/hub31.png",
+            "imagens/futly_pro/hub32.png",
+            "imagens/futly_pro/hub33.png"
+        ],
+        badges: [
+            { texto: "Projeto Pessoal", cor: "purple" },
+            { texto: "Em Andamento", cor: "green" }
+        ],
+        tags: [
+            { nome: "Flutter", cor: "blue" },
+            { nome: "Dart", cor: "purple" },
+            { nome: "Supabase", cor: "green" }
+        ],
+        linkLive: { url: "https://ifut-app-web.vercel.app", texto: "ifut-app-web.vercel.app" },
+        linkGitHub: "https://github.com/fabricio-rv/ifut_app"
+    },
+    {
+        titulo: "iFut",
+        descricao: "Plataforma Full Stack PHP para organização de partidas e avaliação de jogadores.",
+        descricaoLonga: "Sistema web completo desenvolvido como TCC, focado em resolver a dor de organizar o futebol semanal. O iFut gerencia todo o ciclo de uma partida: desde o agendamento e convite de jogadores até o sistema de avaliação pós-jogo (reputação). Conta com funcionalidades sociais como chat, perfis de jogadores e histórico de partidas, tudo envelopado em uma interface moderna com tema Neon/Dark.",
+        detalhesTecnicos: "Backend robusto em PHP 8+ com arquitetura MVC-like (separação de lógica, views e banco de dados). O sistema gerencia autenticação segura de sessões, upload de imagens e complexas queries SQL para relacionar jogadores, partidas e avaliações. O frontend utiliza Bootstrap 5 com personalizações CSS3 avançadas (animações keyframes) e JavaScript para interatividade dinâmica.",
+        imagem: "imagens/ifut/ifut26.png",
+        galeria: ["imagens/ifut/ifut26.png",
+            "imagens/ifut/ifut1.png",
+            "imagens/ifut/ifut2.png",
+            "imagens/ifut/ifut3.png",
+            "imagens/ifut/ifut4.png",
+            "imagens/ifut/ifut5.png",
+            "imagens/ifut/ifut6.png",
+            "imagens/ifut/ifut7.png",
+            "imagens/ifut/ifut8.png",
+            "imagens/ifut/ifut9.png",
+            "imagens/ifut/ifut10.png",
+            "imagens/ifut/ifut11.png",
+            "imagens/ifut/ifut12.png",
+            "imagens/ifut/ifut13.png",
+            "imagens/ifut/ifut14.png",
+            "imagens/ifut/ifut15.png",
+            "imagens/ifut/ifut16.png",
+            "imagens/ifut/ifut17.png",
+            "imagens/ifut/ifut18.png",
+            "imagens/ifut/ifut19.png",
+            "imagens/ifut/ifut20.png",
+            "imagens/ifut/ifut21.png",
+            "imagens/ifut/ifut22.png",
+            "imagens/ifut/ifut23.png",
+            "imagens/ifut/ifut24.png",
+            "imagens/ifut/ifut25.png"
+        ],
+        badges: [
+            { texto: "Projeto Acadêmico", cor: "indigo" },
+            { texto: "Concluído", cor: "blue" }
+        ],
+        tags: [
+            { nome: "PHP", cor: "blue" },
+            { nome: "MySQL", cor: "green" },
+            { nome: "JavaScript", cor: "yellow" },
+            { nome: "HTML", cor: "purple" },
+            { nome: "TailwindCSS", cor: "indigo" }
+        ],
+        linkLive: { url: "http://fut.rf.gd/", texto: "fut.rf.gd" },
+        linkGitHub: "https://github.com/fabricio-rv/ifut"
+    },
+    {
+        titulo: "Portfólio Pessoal",
+        descricao: "SPA (Single Page Application) construída com arquitetura baseada em componentes Vanilla JS.",
+        descricaoLonga: "Meu espaço pessoal na web, projetado para ser um showcase vivo das minhas habilidades. Ao contrário de templates prontos, este portfólio foi arquitetado do zero. Ele utiliza um sistema próprio de renderização de componentes baseado em dados JSON, simulando o comportamento reativo de frameworks modernos, mas com a leveza do JavaScript puro.",
+        detalhesTecnicos: "Desenvolvido sem frameworks (No-Framework Approach) para demonstrar domínio dos fundamentos da Web. A arquitetura separa estritamente Dados (`dados*.js`) de Lógica (`script.js`) e Apresentação (`HTML/Tailwind`). Conta com renderização dinâmica de DOM, manipulação de eventos complexos (Modais, Carrossel), animações via AOS/Vanta.js e integração de formulário via AJAX/Fetch API.",
+        imagem: "imagens/pessoal/fabricio1.png",
+        galeria: ["imagens/pessoal/fabricio1.png",
+            "imagens/pessoal/fabricio2.png",
+            "imagens/pessoal/fabricio3.png",
+            "imagens/pessoal/fabricio4.png",
+            "imagens/pessoal/fabricio5.png",
+            "imagens/pessoal/fabricio6.png",
+            "imagens/pessoal/fabricio7.png"
+        ],
+        badges: [
+            { texto: "Projeto Pessoal", cor: "purple" },
+            { texto: "Concluído", cor: "blue" }
+        ],
+        tags: [
+            { nome: "HTML", cor: "blue" },
+            { nome: "TailwindCSS", cor: "indigo" },
+            { nome: "JavaScript", cor: "yellow" }
+        ],
+        linkLive: { url: "https://fabriciorassier.com.br", texto: "fabriciorassier.com.br" },
+        linkGitHub: "https://github.com/fabricio-rv/fabricio_rassier"
+    },
+    {
+        titulo: "Messi Bio & Stats",
+        descricao: "Enciclopédia interativa PWA-Ready com análise de dados e design moderno.",
+        descricaoLonga: "Mais do que uma biografia, este projeto é uma aplicação web imersiva que documenta a carreira do atleta através de storytelling visual. A interface conta com 'Dark Mode' nativo, animações de rolagem (AOS) e tabelas de estatísticas dinâmicas. O projeto foi otimizado para SEO e configurado como PWA (Progressive Web App), oferecendo uma experiência de aplicativo nativo em dispositivos móveis.",
+        detalhesTecnicos: "Desenvolvido com Tailwind CSS para estilização rápida e consistente. A arquitetura inclui integração com Google Analytics 4 (GA4) para monitoramento de tráfego. O layout responsivo utiliza Grid e Flexbox avançados para organizar grandes volumes de dados (títulos e recordes) de forma legível em qualquer dispositivo.",
+        imagem: "imagens/messi/messi1.png",
+        galeria: ["imagens/messi/messi1.png",
+            "imagens/messi/messi2.png",
+            "imagens/messi/messi3.png",
+            "imagens/messi/messi4.png",
+            "imagens/messi/messi5.png",
+            "imagens/messi/messi6.png",
+            "imagens/messi/messi7.png",
+            "imagens/messi/messi8.png",
+            "imagens/messi/messi9.png"
+        ],
+        badges: [
+            { texto: "Projeto Pessoal", cor: "purple" },
+            { texto: "Concluído", cor: "blue" }
+        ],
+        tags: [
+            { nome: "HTML", cor: "blue" },
+            { nome: "CSS", cor: "pink" },
+            { nome: "JavaScript", cor: "yellow" }
+        ],
+        linkLive: { url: "https://messigoat.com.br", texto: "messigoat.com.br" },
+        linkGitHub: "https://github.com/fabricio-rv/messi"
+    }
+];
