@@ -1,16 +1,22 @@
 const dadosTrajetoria = {
     educacao: [
         {
+            curso: "Engenharia de Software",
+            periodo: "2026 - 2028",
+            instituicao: "PUCRS",
+            descricao: "Graduação focada em engenharia de software experimental, arquitetura de sistemas e metodologias ágeis aplicadas em projetos reais."
+        },
+        {
+            curso: "Bacharelado em Ciência da Computação",
+            periodo: "2025",
+            instituicao: "UniRitter",
+            descricao: "Início da trajetória acadêmica com foco em fundamentos de Java, algoritmos e lógica de programação, posteriormente transferido para a PUCRS."
+        },
+        {
             curso: "Técnico em Desenvolvimento de Sistemas",
             periodo: "2023 - 2025",
             instituicao: "Senac Tech",
             descricao: "Formação técnica com foco em desenvolvimento de sistemas, programação web e mobile, banco de dados e análise de sistemas."
-        },
-        {
-            curso: "Bacharelado em Ciência da Computação",
-            periodo: "2025 - 2028",
-            instituicao: "UniRitter",
-            descricao: "Aprofundando conhecimentos em Java, Programação Orientada a Objetos, Modelagem de Software e Boas Práticas de Desenvolvimento, além de Sistemas Computacionais de Segurança, Ambientes Computacionais e Conectividade."
         }
     ],
     certificacoes: [
@@ -19,7 +25,7 @@ const dadosTrajetoria = {
         { nome: "Sistemas computacionais e segurança", instituicao: "UniRitter (2025)" },
         { nome: "Ambientes computacionais e conectividade", instituicao: "UniRitter (2025)" },
         { nome: "Introduction to Cybersecurity", instituicao: "Cisco Networking Academy (2025)" }
-    ],
+    ]
 
     /*experiencia: [
         {

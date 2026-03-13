@@ -1,7 +1,7 @@
 const dadosSobre = {
     paragrafos: [
         "Sou desenvolvedor web e mobile, com foco em Flutter/Dart, Desenvolvimento Web Responsivo, Next.js, TypeScript, React, HTML, CSS e Python, além de conhecimentos adicionais em JavaScript, Java, Cibersegurança e SQL.",
-        "Tenho formação técnica em Desenvolvimento de Sistemas (Senac Tech) e atualmente curso Ciência da Computação (UniRitter), onde aprofundo meus conhecimentos em Java, programação orientada a objetos, modelagem de software e boas práticas de desenvolvimento.",
+        "Tenho formação técnica em Desenvolvimento de Sistemas (Senac Tech) e atualmente curso Engenharia de Software na PUCRS, tendo iniciado minha base acadêmica em Ciência da Computação na UniRitter.",
         "Atuei em projetos freelancer e acadêmicos, como sistemas web completos e aplicativos móveis, incluindo soluções para empresas e clientes finais. Meu objetivo é colaborar em projetos onde eu possa aprender continuamente e entregar resultados com qualidade."
     ],
     badges: [
